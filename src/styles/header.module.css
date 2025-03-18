@@ -1,8 +1,18 @@
+.header {
+  background-image: url(../../public/images/homepage_hero.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+}
+
 .logo {
   position: relative;
 
   & p {
-    letter-spacing: 59%;
+    letter-spacing: 0.5em;
+    text-align: center;
   }
 
   &::after {
