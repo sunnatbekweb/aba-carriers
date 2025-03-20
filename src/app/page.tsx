@@ -69,7 +69,7 @@ export default function Home() {
             height={45}
             alt="Wheel icon"
           />
-          <div className="mt-10 pl-[100px] border-b-2 border-[#ff0000]">
+          <div className="mt-10 pl-[100px] pb-[30px] border-b-2 border-[#ff0000]">
             <h2 className="brigendsExpanded text-[45px]">Drive for aba</h2>
           </div>
           <p className="text-2xl my-[65px] max-w-[656px] text-right">
@@ -79,10 +79,61 @@ export default function Home() {
             or a company driver we offer the opportunities, resources, and
             respect you deserve. Join us today and drive your future forward!
           </p>
-          <ButtonPrimary text="read more" />
+          <ButtonPrimary text="Read more" />
         </div>
-        <div className="h-14"></div>
       </section>
+      <div className={`${styles.section_bottom_gradient} h-14`}></div>
+      <section className={`${styles.services}`}>
+        <div className="container flex items-center justify-between">
+          <div>
+            <Image
+              src={"/icons/operator.svg"}
+              width={60}
+              height={45}
+              alt="Operator icon"
+            />
+            <h2 className="brigendsExpanded text-[40px] border-b-2 border-[#ff0000] w-fit mt-10 pb-[30px]">
+              ABA SERVICES
+            </h2>
+            <ol className="flex flex-col gap-y-[60px] my-[65px] list-decimal">
+              <li className="max-w-[570px] text-2xl">
+                Team Transit Shipments: Focused on expedited team transit to
+                provide time-sensitive transportation solutions
+              </li>
+              <li className="max-w-[570px] text-2xl">
+                Experienced Dry Van Drivers: Skilled professionals ensuring
+                secure, efficient and on-time delicate shipments
+              </li>
+            </ol>
+            <ButtonPrimary text="Read more" />
+          </div>
+        </div>
+      </section>
+      <div className={`${styles.section_bottom_gradient} h-14`}></div>
+      <section className={`${styles.carriers} py-[125px]`}>
+        <div className="container flex flex-col items-end">
+          <Image
+            src={"/icons/carriers_icon.svg"}
+            width={60}
+            height={60}
+            alt="Carriers image"
+          />
+          <div className="border-b-2 border-[#ff0000] max-w-[540px]">
+            <h2 className="brigendsExpanded text-[40px] w-fit mt-10 pb-[30px] text-right">
+              ABOUT ABA CARRIERS INC
+            </h2>
+          </div>
+          <p className="max-w-[690px] text-2xl my-[65px] text-right">
+            Since 2021, ABA has successfully delivered tens of thousands of
+            loads, earning the trust of industry-leading brokers. Each year, we
+            cover hundreds of thousands of miles, ensuring reliable and
+            efficient transportation. With 200+ satisfied clients, we are
+            committed to excellence in every shipment
+          </p>
+          <ButtonPrimary text="Read more" />
+        </div>
+      </section>
+      <div className={`${styles.section_bottom_gradient} h-14`}></div>
     </>
   );
 }

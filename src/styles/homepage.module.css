@@ -16,3 +16,28 @@
   background-position: 0 -20px;
   padding: 65px;
 }
+
+.section_bottom_gradient {
+  background: linear-gradient(90deg, #191e18 0%, #252525 100%);
+}
+
+.services {
+  background-image: url(../../public/images/boxes.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 140px;
+
+  &::after {
+    content: url(../../public/images/American-Truck.png);
+    position: absolute;
+    right: 0;
+    top: 120px;
+  }
+}
+
+.carriers {
+  background-image: url(../../public/images/carriers_image.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
