@@ -1,5 +1,13 @@
 import React from "react";
 
-export const ButtonPrimary = () => {
-  return <div>ButtonPrimary</div>;
+type ButtonProps = {
+  text: string;
+};
+
+export const ButtonPrimary: React.FC<ButtonProps> = ({ text }) => {
+  return (
+    <button className="py-3 px-6 rounded-2xl bg-[#FF0000] text-white">
+      {text}
+    </button>
+  );
 };

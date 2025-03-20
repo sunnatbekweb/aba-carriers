@@ -1,5 +1,20 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Brigends Expanded";
+  src: url(../../public/fonts/Brigends\ Expanded.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
 .container {
   margin: 0 auto;
+}
+
+.brigendsExpanded {
+  font-family: "Brigends Expanded";
+}
+
+button {
+  cursor: pointer;
 }
