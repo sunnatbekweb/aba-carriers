@@ -122,6 +122,32 @@ export const Footer = () => {
               </ul>
             </div>
           </div>
+          <div className="flex gap-x-10">
+            <Link href={"#"}>
+              <Image
+                src={"/icons/telegram.svg"}
+                width={40}
+                height={40}
+                alt="telegram icon"
+              />
+            </Link>
+            <Link href={"#"}>
+              <Image
+                src={"/icons/instagram.svg"}
+                width={40}
+                height={40}
+                alt="telegram icon"
+              />
+            </Link>
+            <Link href={"#"}>
+              <Image
+                src={"/icons/facebook.svg"}
+                width={40}
+                height={40}
+                alt="telegram icon"
+              />
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
