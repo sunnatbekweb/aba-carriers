@@ -35,7 +35,7 @@ export default function Home() {
               a team of experienced professionals, we provide reliable trucking
               services tailored to your logistics needs
             </p>
-            <ButtonPrimary text="read more" />
+            <ButtonPrimary text="Read more" />
           </div>
           <div className="flex flex-col gap-y-10">
             <Image
