@@ -1,0 +1,8 @@
+.footer {
+  position: relative;
+  background-image: url(../../public/icons/footer_bg.svg);
+  background-position: 100px 40px;
+  background-repeat: no-repeat;
+  font-family: "Segoe UI";
+  color: #ffffff;
+}

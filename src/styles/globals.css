@@ -7,6 +7,27 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Segoe UI";
+  src: url(../../public/fonts/Segoe\ UI.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url(../../public/fonts/Segoe\ UI\ Semibold.ttf);
+  font-style: 600;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url(../../public/fonts/Segoe\ UI\ Bold.ttf);
+  font-style: 700;
+  font-weight: normal;
+}
+
 *::after,
 *::before {
   scroll-behavior: smooth;
