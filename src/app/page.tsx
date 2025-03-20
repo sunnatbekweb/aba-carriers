@@ -17,8 +17,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="py-40 bg-[#1C2016] text-white">
-        <div className="container">
+      <section className="py-40 bg-[#1C2016] text-white overflow-hidden">
+        <div className="container flex items-center justify-between">
           <div className="max-w-[795px]">
             <Image
               src={"/icons/truck.svg"}
@@ -37,7 +37,51 @@ export default function Home() {
             </p>
             <ButtonPrimary text="read more" />
           </div>
+          <div className="flex flex-col gap-y-10">
+            <Image
+              src={"/images/truck.svg"}
+              className="translate-x-[350px]"
+              width={800}
+              height={160}
+              alt="Truck"
+            />
+            <Image
+              src={"/images/truck.svg"}
+              className="translate-x-[175px]"
+              width={800}
+              height={160}
+              alt="Truck"
+            />
+            <Image
+              src={"/images/truck.svg"}
+              width={800}
+              height={160}
+              alt="Truck"
+            />
+          </div>
         </div>
+      </section>
+      <section className={`${styles.third_section}`}>
+        <div className="container flex flex-col items-end">
+          <Image
+            src={"/icons/wheel.svg"}
+            width={60}
+            height={45}
+            alt="Wheel icon"
+          />
+          <div className="mt-10 pl-[100px] border-b-2 border-[#ff0000]">
+            <h2 className="brigendsExpanded text-[45px]">Drive for aba</h2>
+          </div>
+          <p className="text-2xl my-[65px] max-w-[656px] text-right">
+            Looking for a trucking company that values you? At ABA, we put our
+            drivers first with competitive pay, steady miles, and a supportive
+            team that treats you like family. Whether you're an owner operator
+            or a company driver we offer the opportunities, resources, and
+            respect you deserve. Join us today and drive your future forward!
+          </p>
+          <ButtonPrimary text="read more" />
+        </div>
+        <div className="h-14"></div>
       </section>
     </>
   );

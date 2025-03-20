@@ -9,3 +9,10 @@
   justify-content: center;
   align-items: center;
 }
+
+.third_section {
+  background-image: url(../../public/images/section_bg.png);
+  background-size: cover;
+  background-position: 0 -20px;
+  padding: 65px;
+}
