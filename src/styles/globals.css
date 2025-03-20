@@ -2,28 +2,28 @@
 
 @font-face {
   font-family: "Brigends Expanded";
-  src: url(../../public/fonts/Brigends\ Expanded.otf);
+  src: url(../../public/fonts/BrigendsExpanded.otf);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Segoe UI";
-  src: url(../../public/fonts/Segoe\ UI.ttf);
+  src: url(../../public/fonts/SegoeUI.ttf);
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Segoe UI";
-  src: url(../../public/fonts/Segoe\ UI\ Semibold.ttf);
+  src: url(../../public/fonts/SegoeUISemibold.ttf);
   font-style: 600;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Segoe UI";
-  src: url(../../public/fonts/Segoe\ UI\ Bold.ttf);
+  src: url(../../public/fonts/SegoeUIBold.ttf);
   font-style: 700;
   font-weight: normal;
 }
