@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <section className={`${styles.intro}`}>
         <div className="max-w-[795px] flex flex-col items-center">
-          <h1 className="brigendsExpanded text-[50px] text-white mb-14">
+          <h1 className="brigendsExpanded text-[50px] text-white text-center mb-14">
             Your belongings are in safe hands
           </h1>
           <div className="flex items-center gap-x-[50px]">
