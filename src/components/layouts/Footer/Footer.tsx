@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <footer className={`${styles.footer} py-10 pl-[100px] relative`}>
-      <div className="container">
+    <footer className={`${styles.footer} py-10 relative`}>
+      <div className="container pl-[160px]">
         <div className="w-fit absolute top-10 left-[140px]">
           <Image
             src={"/icons/Logo_red.svg"}
@@ -18,7 +18,7 @@ export const Footer = () => {
             CARRIERS
           </p>
         </div>
-        <div className="pl-[60px] pt-[160px] flex justify-between">
+        <div className="pt-[160px] flex justify-between">
           <div className="flex items-start gap-x-5">
             <Image
               src={"/icons/email.svg"}
