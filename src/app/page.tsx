@@ -126,6 +126,15 @@ export default function Home() {
       </section>
       <div className={`${styles.section_bottom_gradient} h-14`}></div>
       <section className={`${styles.carriers} py-[125px]`}>
+        <div className="absolute top-0 w-1/2 h-full">
+          <Image
+            src={"/images/carriers_image.png"}
+            width={960}
+            height={1020}
+            className="h-full w-full"
+            alt="Carriers section image"
+          />
+        </div>
         <div className="container flex flex-col items-end">
           <Image
             src={"/icons/carriers_icon.svg"}

@@ -27,7 +27,5 @@
 }
 
 .carriers {
-  background-image: url(../../public/images/carriers_image.png);
-  background-repeat: no-repeat;
-  background-position: left;
+  position: relative;
 }
