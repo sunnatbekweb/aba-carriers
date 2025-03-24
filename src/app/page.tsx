@@ -119,7 +119,7 @@ export default function Home() {
             src={"/images/American-Truck.png"}
             width={1080}
             height={834}
-            className="absolute top-[120px]"
+            className="absolute top-[120px] -right-12"
             alt="Section side image"
           />
         </div>

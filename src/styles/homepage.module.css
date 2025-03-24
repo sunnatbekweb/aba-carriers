@@ -12,8 +12,9 @@
 
 .third_section {
   background-image: url(../../public/images/section_bg.png);
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 -20px;
+  background-position: -5px -5px;
   padding: 65px;
 }
 
@@ -24,6 +25,7 @@
 .services {
   position: relative;
   padding: 140px;
+  overflow-x: hidden;
 }
 
 .carriers {

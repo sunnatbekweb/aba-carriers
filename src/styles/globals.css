@@ -33,6 +33,10 @@
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: var(--font-poppins), sans-serif;
+}
+
 .container {
   margin: 0 auto;
 }
