@@ -4,7 +4,7 @@ import React from "react";
 export const Navbar = () => {
   return (
     <nav>
-      <ul>
+      <ul className="flex flex-col">
         <li>
           <Link href={"#"}></Link>
         </li>

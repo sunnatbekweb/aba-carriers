@@ -108,6 +108,21 @@ export default function Home() {
             <ButtonPrimary text="Read more" />
           </div>
         </div>
+        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-1/2">
+          <Image
+            src={"/images/boxes.png"}
+            width={1400}
+            height={1000}
+            alt="Section side image"
+          />
+          <Image
+            src={"/images/American-Truck.png"}
+            width={1080}
+            height={834}
+            className="absolute top-[120px]"
+            alt="Section side image"
+          />
+        </div>
       </section>
       <div className={`${styles.section_bottom_gradient} h-14`}></div>
       <section className={`${styles.carriers} py-[125px]`}>
