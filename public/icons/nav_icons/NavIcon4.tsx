@@ -1,6 +1,6 @@
 import React from "react";
 
-export const FourthIcon = () => {
+export const NavIcon4 = () => {
   return (
     <svg
       width="30"
