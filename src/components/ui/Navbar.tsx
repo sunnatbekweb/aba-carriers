@@ -9,7 +9,7 @@ import styles from "@/styles/nav.module.css"
 
 export const Navbar = () => {
   return (
-    <nav className={`${styles.nav} fixed top-1/2 -translate-y-1/2 left-3 lg:left-8 xl:left-16 px-2.5 py-3.5 rounded-[50px] bg-[#202020]`}>
+    <nav className={`${styles.nav} fixed z-10 top-1/2 -translate-y-1/2 left-3 lg:left-8 xl:left-16 px-2.5 py-3.5 rounded-[50px] bg-[#202020]`}>
       <ul className="flex flex-col gap-y-12">
         <li>
           <Link href={"#"}>

@@ -11,11 +11,11 @@
 }
 
 .third_section {
-  background-image: url(../../public/images/section_bg.png);
+  background-image: url(../../public/images/section_bg-sm.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: -5px -5px;
-  padding: 65px;
+  padding: 80px 0;
 }
 
 .section_bottom_gradient {
@@ -30,4 +30,17 @@
 
 .carriers {
   position: relative;
+}
+
+@media screen and (min-width: 1024px) {
+  .third_section {
+    background-image: url(../../public/images/section_bg-md.png);
+    padding: 65px 0;
+  }
+}
+
+@media screen and (min-width: 1520px) {
+  .third_section {
+    background-image: url(../../public/images/section_bg.png);
+  }
 }

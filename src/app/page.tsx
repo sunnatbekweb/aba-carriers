@@ -7,29 +7,32 @@ export default function Home() {
   return (
     <>
       <section className={`${styles.intro}`}>
-        <div className="max-w-[795px] flex flex-col items-center">
-          <h1 className="brigendsExpanded text-[50px] text-white text-center mb-14">
-            Your belongings are in safe hands
-          </h1>
-          <div className="flex items-center gap-x-[50px]">
-            <ButtonSecondary text="Get a quote" />
-            <ButtonPrimary text="Drive with us" />
+        <div className="container flex justify-center">
+          <div className="max-w-[520px] lg:max-w-[795px] flex flex-col items-center">
+            <h1 className="brigendsExpanded text-[30px] md:text-[35px] lg:text-[50px] text-white text-center mb-7 lg:mb-14">
+              Your belongings are in safe hands
+            </h1>
+            <div className="flex flex-col gap-y-7 sm:flex-row items-center gap-x-[50px]">
+              <ButtonSecondary text="Get a quote" />
+              <ButtonPrimary text="Drive with us" />
+            </div>
           </div>
         </div>
       </section>
-      <section className="py-40 bg-[#1C2016] text-white overflow-hidden">
+      <section className="py-10 md:py-20 lg:py-40 bg-[#1C2016] text-white overflow-hidden">
         <div className="container flex items-center justify-between">
           <div className="max-w-[795px]">
             <Image
               src={"/icons/truck.svg"}
               width={60}
               height={45}
+              className="w-[30] h-[25px] md:w-[50px] md:h-[35px] lg:w-[60] lg:h-[45px]"
               alt="Truck icon"
             />
-            <h2 className="brigendsExpanded text-[40px] border-b-2 border-[#ff0000] w-fit mt-10 pb-[30px]">
+            <h2 className="brigendsExpanded text-[28px] lg:text-[40px] border-b-2 border-[#ff0000] w-fit mt-10 pb-5 md:pb-[15px] lg:pb-[30px]">
               WHY ABA CARRIERS
             </h2>
-            <p className="my-[65px] text-2xl">
+            <p className="mt-5 mb-10 md:my-10 lg:my-[65px] text-lg lg:text-2xl">
               At ABA, we are dedicated to delivering freight safely,
               efficiently, and on time across the USA. With a growing fleet and
               a team of experienced professionals, we provide reliable trucking
@@ -37,7 +40,7 @@ export default function Home() {
             </p>
             <ButtonPrimary text="Read more" />
           </div>
-          <div className="flex flex-col gap-y-10">
+          <div className="hidden lg:flex flex-col gap-y-6 xl:gap-y-10">
             <Image
               src={"/images/truck.svg"}
               className="translate-x-[350px]"
@@ -61,18 +64,19 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className={`${styles.third_section}`}>
-        <div className="container flex flex-col items-end">
+      <section className={`${styles.third_section} text-white lg:text-black`}>
+        <div className="container flex flex-col items-start lg:items-end">
           <Image
             src={"/icons/wheel.svg"}
             width={60}
             height={45}
+            className="w-[30] h-[25px] md:w-[50px] md:h-[35px] lg:w-[60] lg:h-[45px]"
             alt="Wheel icon"
           />
-          <div className="mt-10 pl-[100px] pb-[30px] border-b-2 border-[#ff0000]">
-            <h2 className="brigendsExpanded text-[45px]">Drive for aba</h2>
+          <div className="mt-10 lg:pl-[100px] pb-5 md:pb-[15px] lg:pb-[30px] w-full lg:w-fit border-b-2 border-[#ff0000]">
+            <h2 className="brigendsExpanded text-[28px] lg:text-[45px]">Drive for aba</h2>
           </div>
-          <p className="text-2xl my-[65px] max-w-[656px] text-right">
+          <p className="mt-5 mb-10 md:my-10 lg:my-[65px] text-lg lg:text-2xl max-w-[656px] lg:text-right">
             Looking for a trucking company that values you? At ABA, we put our
             drivers first with competitive pay, steady miles, and a supportive
             team that treats you like family. Whether you're an owner operator

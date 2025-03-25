@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { WatsApp } from "../../../../public/icons/WatsApp";
 import { Facebook } from "../../../../public/icons/Facebook";
 import { Phone } from "../../../../public/icons/Phone";
-import styles from "@/styles/header.module.css";
 import { Menu } from "../../../../public/icons/Menu";
-import Link from "next/link";
+import styles from "@/styles/header.module.css";
 
 export const Header = () => {
   return (
@@ -24,11 +24,13 @@ export const Header = () => {
                 className="w-[70px] md:w-[120px] xl:w-[160px] md:h-auto"
                 alt="Logo"
               />
-              <p className="text-[8px] md:text-sm xl:text-lg text-white">CARRIERS</p>
+              <p className="text-[8px] md:text-sm xl:text-lg text-white">
+                CARRIERS
+              </p>
             </div>
           </div>
         </div>
-        <div className="container px-5 flex justify-end">
+        <div className="container flex justify-end">
           <div className="flex items-center gap-x-5 md:gap-x-10">
             <Link href={"#"} className={`${styles.icon}`}>
               <WatsApp />
