@@ -74,7 +74,9 @@ export default function Home() {
             alt="Wheel icon"
           />
           <div className="mt-10 lg:pl-[100px] pb-5 md:pb-[15px] lg:pb-[30px] w-full lg:w-fit border-b-2 border-[#ff0000]">
-            <h2 className="brigendsExpanded text-[28px] lg:text-[45px]">Drive for aba</h2>
+            <h2 className="brigendsExpanded text-[28px] lg:text-[45px]">
+              Drive for aba
+            </h2>
           </div>
           <p className="mt-5 mb-10 md:my-10 lg:my-[65px] text-lg lg:text-2xl max-w-[656px] lg:text-right">
             Looking for a trucking company that values you? At ABA, we put our
@@ -94,17 +96,18 @@ export default function Home() {
               src={"/icons/operator.svg"}
               width={60}
               height={45}
+              className="w-[30] h-[25px] md:w-[50px] md:h-[35px] lg:w-[60] lg:h-[45px]"
               alt="Operator icon"
             />
-            <h2 className="brigendsExpanded text-[40px] border-b-2 border-[#ff0000] w-fit mt-10 pb-[30px]">
+            <h2 className="brigendsExpanded text-[28px] lg:text-[40px] border-b-2 border-[#ff0000] w-fit mt-10 pb-5 md:pb-[15px] lg:pb-[30px]">
               ABA SERVICES
             </h2>
             <ol className="flex flex-col gap-y-[60px] my-[65px] list-decimal">
-              <li className="max-w-[570px] text-2xl">
+              <li className="max-w-[570px] text-base md:text-lg xl:text-2xl">
                 Team Transit Shipments: Focused on expedited team transit to
                 provide time-sensitive transportation solutions
               </li>
-              <li className="max-w-[570px] text-2xl">
+              <li className="max-w-[570px] text-base md:text-lg xl:text-2xl">
                 Experienced Dry Van Drivers: Skilled professionals ensuring
                 secure, efficient and on-time delicate shipments
               </li>
