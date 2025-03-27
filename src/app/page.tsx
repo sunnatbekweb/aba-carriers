@@ -134,8 +134,8 @@ export default function Home() {
         </div>
       </section>
       <div className={`${styles.section_bottom_gradient} h-14`}></div>
-      <section className={`${styles.carriers} py-[125px]`}>
-        <div className="absolute top-0 w-1/2 h-full">
+      <section className={`${styles.carriers} pb-[60px] lg:py-[125px]`}>
+        <div className="w-full lg:absolute top-0 lg:w-1/2 h-full mb-6">
           <Image
             src={"/images/carriers_image.png"}
             width={960}
@@ -144,29 +144,34 @@ export default function Home() {
             alt="Carriers section image"
           />
         </div>
-        <div className="container flex flex-col items-end">
-          <Image
-            src={"/icons/carriers_icon.svg"}
-            width={60}
-            height={60}
-            alt="Carriers image"
-          />
-          <div className="border-b-2 border-[#ff0000] max-w-[540px]">
-            <h2 className="brigendsExpanded text-[40px] w-fit mt-10 pb-[30px] text-right">
-              ABOUT ABA CARRIERS INC
-            </h2>
+        <div className="container">
+          <div className="lg:w-1/2 flex flex-col items-end ml-auto pl-5">
+            <Image
+              src={"/icons/carriers_icon.svg"}
+              width={60}
+              height={60}
+              className="w-[30] h-[25px] md:w-[50px] md:h-[35px] lg:w-[60] lg:h-[45px]"
+              alt="Carriers image"
+            />
+            <div className="border-b-2 border-[#ff0000] max-w-[540px]">
+              <h2 className="brigendsExpanded text-[28px] lg:text-[40px] text-left w-fit mt-10 pb-5 md:pb-[15px] lg:pb-[30px] md:text-right">
+                ABOUT ABA CARRIERS INC
+              </h2>
+            </div>
+            <p className="max-w-[690px] text-lg lg:text-2xl my-[65px] text-left lg:text-right">
+              Since 2021, ABA has successfully delivered tens of thousands of
+              loads, earning the trust of industry-leading brokers. Each year,
+              we cover hundreds of thousands of miles, ensuring reliable and
+              efficient transportation. With 200+ satisfied clients, we are
+              committed to excellence in every shipment
+            </p>
+            <ButtonPrimary text="Read more" />
           </div>
-          <p className="max-w-[690px] text-2xl my-[65px] text-right">
-            Since 2021, ABA has successfully delivered tens of thousands of
-            loads, earning the trust of industry-leading brokers. Each year, we
-            cover hundreds of thousands of miles, ensuring reliable and
-            efficient transportation. With 200+ satisfied clients, we are
-            committed to excellence in every shipment
-          </p>
-          <ButtonPrimary text="Read more" />
         </div>
       </section>
-      <div className={`${styles.section_bottom_gradient} h-14 hidden lg:block`}></div>
+      <div
+        className={`${styles.section_bottom_gradient} h-14 hidden lg:block`}
+      ></div>
     </>
   );
 }
