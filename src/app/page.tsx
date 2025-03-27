@@ -166,7 +166,7 @@ export default function Home() {
           <ButtonPrimary text="Read more" />
         </div>
       </section>
-      <div className={`${styles.section_bottom_gradient} h-14`}></div>
+      <div className={`${styles.section_bottom_gradient} h-14 hidden lg:block`}></div>
     </>
   );
 }
