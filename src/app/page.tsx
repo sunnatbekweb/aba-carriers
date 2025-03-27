@@ -42,7 +42,7 @@ export default function Home() {
             </p>
             <ButtonPrimary text="Read more" />
           </div>
-          <div className="hidden min-w-1/2 lg:min-w-auto lg:flex flex-col gap-y-6 xl:gap-y-10">
+          <div className="hidden min-w-1/2 xl:min-w-auto lg:flex flex-col gap-y-6 xl:gap-y-10">
             <Image
               src={"/images/truck.svg"}
               className="translate-x-[350px]"
