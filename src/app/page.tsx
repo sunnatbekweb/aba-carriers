@@ -1,11 +1,13 @@
+import Image from "next/image";
 import { ButtonPrimary } from "@/components/ui/ButtonPrimary";
 import { ButtonSecondary } from "@/components/ui/ButtonSecondary";
+import { Navbar } from "@/components/ui/Navbar";
 import styles from "@/styles/homepage.module.css";
-import Image from "next/image";
 
 export default function Home() {
   return (
     <>
+      <Navbar />
       <section className={`${styles.intro}`}>
         <div className="container flex justify-center">
           <div className="max-w-[520px] lg:max-w-[795px] flex flex-col items-center">
