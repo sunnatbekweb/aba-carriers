@@ -42,7 +42,7 @@ export default function Home() {
             </p>
             <ButtonPrimary text="Read more" />
           </div>
-          <div className="hidden lg:flex flex-col gap-y-6 xl:gap-y-10">
+          <div className="hidden min-w-1/2 lg:min-w-auto lg:flex flex-col gap-y-6 xl:gap-y-10">
             <Image
               src={"/images/truck.svg"}
               className="translate-x-[350px]"
@@ -117,7 +117,7 @@ export default function Home() {
             <ButtonPrimary text="Read more" />
           </div>
         </div>
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-1/2">
+        <div className="relative lg:absolute right-0 top-1/2 lg:-translate-y-1/2 lg:w-1/2">
           <Image
             src={"/images/boxes.png"}
             width={1400}
@@ -128,7 +128,7 @@ export default function Home() {
             src={"/images/American-Truck.png"}
             width={1080}
             height={834}
-            className="absolute top-[120px] -right-12"
+            className="absolute top-[60px] md:top-[120px] -right-6 md:-right-12"
             alt="Section side image"
           />
         </div>
