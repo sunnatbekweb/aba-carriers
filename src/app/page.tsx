@@ -1,8 +1,9 @@
 import Image from "next/image";
-import { ButtonPrimary } from "@/components/ui/ButtonPrimary";
-import { ButtonSecondary } from "@/components/ui/ButtonSecondary";
-import { Navbar } from "@/components/ui/Navbar";
+import {ButtonPrimary} from "@/components/ui/ButtonPrimary";
+import {ButtonSecondary} from "@/components/ui/ButtonSecondary";
+import {Navbar} from "@/components/ui/Navbar";
 import styles from "@/styles/homepage.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="py-10 md:py-20 lg:py-40 bg-[#1C2016] text-white overflow-hidden">
+      <section id={"why"} className="py-10 md:py-20 lg:py-40 bg-[#1C2016] text-white overflow-hidden">
         <div className="container flex items-center justify-between">
           <div className="max-w-[795px]">
             <Image
@@ -40,7 +41,9 @@ export default function Home() {
               a team of experienced professionals, we provide reliable trucking
               services tailored to your logistics needs
             </p>
-            <ButtonPrimary text="Read more" />
+            <Link href={"/why"}>
+              <ButtonPrimary text="Read more" />
+            </Link>
           </div>
           <div className="hidden min-w-1/2 xl:min-w-auto lg:flex flex-col gap-y-6 xl:gap-y-10">
             <Image
@@ -66,7 +69,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className={`${styles.third_section} text-white lg:text-black`}>
+      <section id={"drive"} className={`${styles.third_section} text-white lg:text-black`}>
         <div className="container flex flex-col items-start lg:items-end">
           <Image
             src={"/icons/wheel.svg"}
@@ -87,11 +90,13 @@ export default function Home() {
             or a company driver we offer the opportunities, resources, and
             respect you deserve. Join us today and drive your future forward!
           </p>
-          <ButtonPrimary text="Read more" />
+          <Link href={"/drive"}>
+            <ButtonPrimary text="Read more" />
+          </Link>
         </div>
       </section>
       <div className={`${styles.section_bottom_gradient} h-14`}></div>
-      <section className={`${styles.services}`}>
+      <section id={"services"} className={`${styles.services}`}>
         <div className="container flex items-center justify-between">
           <div>
             <Image
@@ -114,7 +119,9 @@ export default function Home() {
                 secure, efficient and on-time delicate shipments
               </li>
             </ol>
-            <ButtonPrimary text="Read more" />
+            <Link href={"/services"}>
+              <ButtonPrimary text="Read more" />
+            </Link>
           </div>
         </div>
         <div className="relative lg:absolute right-0 top-1/2 lg:-translate-y-1/2 lg:w-1/2">
@@ -134,7 +141,7 @@ export default function Home() {
         </div>
       </section>
       <div className={`${styles.section_bottom_gradient} h-14`}></div>
-      <section className={`${styles.carriers} pb-[60px] lg:py-[125px]`}>
+      <section id={"about"} className={`${styles.carriers} pb-[60px] lg:py-[125px]`}>
         <div className="w-full lg:absolute top-0 lg:w-1/2 h-full mb-6">
           <Image
             src={"/images/carriers_image.png"}
@@ -165,7 +172,9 @@ export default function Home() {
               efficient transportation. With 200+ satisfied clients, we are
               committed to excellence in every shipment
             </p>
-            <ButtonPrimary text="Read more" />
+            <Link href={"/about"}>
+              <ButtonPrimary text="Read more" />
+            </Link>
           </div>
         </div>
       </section>

@@ -1,5 +1,7 @@
-import React from "react";
-
-export const page = () => {
-  return <div>page</div>;
-};
+export default function About() {
+    return (
+        <div>
+            <h2>About</h2>
+        </div>
+    )
+}

@@ -1,51 +1,37 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: "Brigends Expanded";
-  src: url(../../public/fonts/BrigendsExpanded.otf);
-  font-weight: normal;
-  font-style: normal;
+    font-family: "Brigends Expanded";
+    src: url(../../public/fonts/BrigendsExpanded.otf);
+    font-weight: normal;
+    font-style: normal;
 }
 
-@font-face {
-  font-family: "Segoe UI";
-  src: url(../../public/fonts/SegoeUI.ttf);
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "Segoe UI";
-  src: url(../../public/fonts/SegoeUISemibold.ttf);
-  font-style: 600;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "Segoe UI";
-  src: url(../../public/fonts/SegoeUIBold.ttf);
-  font-style: 700;
-  font-weight: normal;
-}
-
-*::after,
-*::before {
-  scroll-behavior: smooth;
+* {
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: var(--font-poppins), sans-serif;
+    font-family: var(--font-poppins), sans-serif;
 }
 
 .container {
-  margin: 0 auto;
-  padding: 0 20px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .brigendsExpanded {
-  font-family: "Brigends Expanded";
+    font-family: "Brigends Expanded";
 }
 
 button {
-  cursor: pointer;
+    cursor: pointer;
+}
+
+.nav_link-active {
+    & svg {
+        & path {
+            fill: #ff3300;
+        }
+    }
 }
