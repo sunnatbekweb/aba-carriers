@@ -16,7 +16,6 @@ export const Navbar = () => {
 
     useEffect(() => {
         const sections = document.querySelectorAll("section");
-
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
@@ -25,11 +24,9 @@ export const Navbar = () => {
                     }
                 });
             },
-            { threshold: 0.5 } // 50% секции должно быть видно
+            {threshold: 0.5}
         );
-
         sections.forEach((section) => observer.observe(section));
-
         return () => {
             sections.forEach((section) => observer.unobserve(section));
         };
@@ -47,7 +44,7 @@ export const Navbar = () => {
                 onClick={() => setNavOpen(true)}
                 className={`${navOpen ? "opacity-0 collapse" : "opacity-100 visible"} w-[74px] h-[74px] rounded-full fixed top-[33%] z-20 -left-[36px] bg-[#202020] flex items-center justify-end pr-1.5`}
             >
-                <Image src={"/icons/nav_open.svg"} width={25} height={25} alt={"Nav button icon"} />
+                <Image src={"/icons/nav_open.svg"} width={25} height={25} alt={"Nav button icon"}/>
             </button>
             <nav
                 className={`${styles.nav} ${navOpen ? "opacity-100 visible" : "opacity-0 collapse"} fixed z-10 top-1/2 -translate-y-1/2 left-3 lg:left-8 xl:left-16 px-2.5 py-3.5 rounded-[50px] bg-[#202020] duration-300`}
@@ -55,7 +52,7 @@ export const Navbar = () => {
                 <ul className="flex flex-col gap-y-12">
                     <li>
                         <Link href="/" className={activeSection === "" ? "nav_link-active" : ""}>
-                            <Home />
+                            <Home/>
                         </Link>
                     </li>
                     <li>
@@ -63,7 +60,7 @@ export const Navbar = () => {
                             href="#about"
                             className={activeSection === "about" ? "nav_link-active" : ""}
                         >
-                            <NavIcon2 />
+                            <NavIcon2/>
                         </Link>
                     </li>
                     <li>
@@ -71,7 +68,7 @@ export const Navbar = () => {
                             href="#services"
                             className={activeSection === "services" ? "nav_link-active" : ""}
                         >
-                            <NavIcon3 />
+                            <NavIcon3/>
                         </Link>
                     </li>
                     <li>
@@ -79,7 +76,7 @@ export const Navbar = () => {
                             href="#why"
                             className={activeSection === "why" ? "nav_link-active" : ""}
                         >
-                            <NavIcon4 />
+                            <NavIcon4/>
                         </Link>
                     </li>
                     <li>
@@ -87,7 +84,7 @@ export const Navbar = () => {
                             href="#drive"
                             className={activeSection === "drive" ? "nav_link-active" : ""}
                         >
-                            <NavIcon5 />
+                            <NavIcon5/>
                         </Link>
                     </li>
                 </ul>
