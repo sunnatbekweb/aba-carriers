@@ -1,0 +1,11 @@
+.first{
+    background-image: url(../../public/images/about_page.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
