@@ -1,4 +1,4 @@
-export default function Page() {
+export default function Why() {
     return (
         <div>
             <h2>Why ABA</h2>

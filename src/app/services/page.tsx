@@ -1,4 +1,4 @@
-export default function Page() {
+export default function Services() {
     return (
         <div>
             <h2>ABA Services</h2>
