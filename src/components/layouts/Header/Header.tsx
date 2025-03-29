@@ -7,14 +7,19 @@ import {WatsApp} from "../../../../public/icons/WatsApp";
 import {Facebook} from "../../../../public/icons/Facebook";
 import {Phone} from "../../../../public/icons/Phone";
 import {Menu} from "../../../../public/icons/Menu";
-import styles from "@/styles/header.module.css";
 import {NavModal} from "@/components/ui/NavModal";
+import styles from "@/styles/header.module.css";
+import {ContactModal} from "@/components/ui/ContactModal";
 
 export const Header = () => {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isNavOpen, setIsNavOpen] = useState(false);
+    const [isContactOpen, setIsContactOpen] = useState(false);
 
-    const onClose = () => {
-        setIsOpen(false);
+    const onNavClose = () => {
+        setIsNavOpen(false);
+    }
+    const onContactClose = () => {
+        setIsContactOpen(false);
     }
 
     return (
@@ -46,14 +51,16 @@ export const Header = () => {
                         <Link href={"#"} className={`${styles.icon}`}>
                             <Facebook/>
                         </Link>
-                        <Link
-                            href="#"
+                        <button
+                            onClick={() => setIsContactOpen(true)}
                             className={`${styles.icon} flex items-center text-white gap-x-2.5 text-2xl`}
                         >
-                            <Phone/>
+                            <div className={"rotate-90"}>
+                                <Phone/>
+                            </div>
                             <span className="hidden md:block">Call</span>
-                        </Link>
-                        <button onClick={() => setIsOpen(true)}
+                        </button>
+                        <button onClick={() => setIsNavOpen(true)}
                                 className={`${styles.icon} flex items-center gap-x-2.5 text-white text-2xl cursor-pointer`}
                         >
                             <Menu/>
@@ -62,7 +69,8 @@ export const Header = () => {
                     </div>
                 </div>
             </div>
-            <NavModal isOpen={isOpen} onClose={onClose}/>
+            <NavModal isOpen={isNavOpen} onClose={onNavClose}/>
+            <ContactModal isOpen={isContactOpen} onClose={onContactClose}/>
         </header>
     );
 };

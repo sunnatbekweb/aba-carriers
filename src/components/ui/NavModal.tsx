@@ -2,17 +2,23 @@
 
 import Link from "next/link";
 import {usePathname} from "next/navigation";
-import {navModalProps} from "@/types";
-import React from "react";
+import {ModalProps} from "@/types";
+import React, {useEffect} from "react";
 
-export const NavModal: React.FC<navModalProps> = ({isOpen, onClose}) => {
+export const NavModal: React.FC<ModalProps> = ({isOpen, onClose}) => {
     const path = usePathname()
 
-    if (isOpen) {
-        document.body.style.overflowY = "hidden";
-    } else {
-        document.body.style.overflowY = "auto";
-    }
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflowY = "hidden";
+        } else {
+            document.body.style.overflowY = "auto";
+        }
+
+        return () => {
+            document.body.style.overflowY = "auto";
+        };
+    }, [isOpen]);
 
     return (
         <div onClick={onClose}
