@@ -39,7 +39,9 @@ export function TruckImages() {
             {offsets.map((_, index) => (
                 <Image
                     key={index}
-                    ref={(el) => (imagesRef.current[index] = el)}
+                    ref={(el) => {
+                        imagesRef.current[index] = el;
+                    }}
                     src="/images/truck.svg"
                     width={800}
                     height={160}
