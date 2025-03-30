@@ -1,9 +1,10 @@
 import {PageHero} from "@/components/ui/PageHero";
+import BgImage from "../../../public/images/page_hero/about_page.png"
 
 export default function About() {
     return (
-        <main>
-            <PageHero url={"/images/about_page.png"} title={"ABOUT ABA"}/>
+        <>
+            <PageHero url={BgImage.src} title={"ABOUT ABA"}/>
             {/* <section className="container mx-auto px-5 py-16 text-center">
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-wide uppercase">
             ABOUT ABA <br /> CARRIERS INC
@@ -19,6 +20,6 @@ export default function About() {
             industry-leading brokers, and we continue to expand while maintaining the highest standards in transportation.
           </p>
         </section> */}
-        </main>
+        </>
     )
 }

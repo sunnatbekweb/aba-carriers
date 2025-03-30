@@ -23,7 +23,7 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section id={"why"} className="py-10 md:py-20 lg:py-40 bg-[#1C2016] text-white overflow-hidden">
+            <section id={"carriers"} className="py-10 md:py-20 lg:py-40 bg-[#1C2016] text-white overflow-hidden">
                 <div className="container flex items-center justify-between">
                     <div className="max-w-[795px]">
                         <Image

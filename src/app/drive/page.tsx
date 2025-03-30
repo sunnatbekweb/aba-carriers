@@ -1,9 +1,10 @@
 import {PageHero} from "@/components/ui/PageHero";
+import BgImage from "../../../public/images/page_hero/drive_hero.png"
 
 export default function Drive() {
     return (
-        <main>
-            <PageHero url={"/images/drive_hero.png"} title={"Drive For ABA"}/>
-        </main>
+        <>
+            <PageHero url={BgImage.src} title={"Drive For ABA"}/>
+        </>
     )
 }

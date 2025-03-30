@@ -73,8 +73,8 @@ export const Navbar = () => {
                     </li>
                     <li>
                         <Link
-                            href="#why"
-                            className={activeSection === "why" ? "nav_link-active" : ""}
+                            href="#carriers"
+                            className={activeSection === "carriers" ? "nav_link-active" : ""}
                         >
                             <NavIcon4/>
                         </Link>

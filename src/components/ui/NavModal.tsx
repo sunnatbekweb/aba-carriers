@@ -33,8 +33,8 @@ export const NavModal: React.FC<ModalProps> = ({isOpen, onClose}) => {
                         </Link>
                     </li>
                     <li className={"flex justify-center"}>
-                        <Link href={"/why"}
-                              className={`text-xl md:text-3xl lg:text-5xl uppercase text-center ${path === "/why" ? "text-[#ff0000]" : "text-white"}`}>
+                        <Link href={"/carriers"}
+                              className={`text-xl md:text-3xl lg:text-5xl uppercase text-center ${path === "/carriers" ? "text-[#ff0000]" : "text-white"}`}>
                             WHY ABA CARRIERS
                         </Link>
                     </li>
