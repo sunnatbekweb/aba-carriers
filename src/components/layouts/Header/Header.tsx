@@ -26,8 +26,8 @@ export const Header = () => {
         <header className={`${styles.header} flex justify-between`}>
             <div className="w-full flex items-center h-[65px] md:h-[95px] lg:h-[110px] xl:h-[135px]">
                 <div className="absolute left-0 top-0">
-                    <div
-                        className={`${styles.logo} w-40 md:w-[230px] xl:w-[410px] h-fit flex flex-col items-center py-3 lg:py-5`}
+                    <Link href={"/"}
+                          className={`${styles.logo} w-40 md:w-[230px] xl:w-[410px] h-fit flex flex-col items-center py-3 lg:py-5`}
                     >
                         <div className="flex flex-col items-center">
                             <Image
@@ -41,7 +41,7 @@ export const Header = () => {
                                 CARRIERS
                             </p>
                         </div>
-                    </div>
+                    </Link>
                 </div>
                 <div className="container flex justify-end">
                     <div className="flex items-center gap-x-5 md:gap-x-10">

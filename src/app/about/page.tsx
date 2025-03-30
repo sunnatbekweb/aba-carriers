@@ -1,18 +1,10 @@
-import styles from  "@/styles/about.module.css"
+import {PageHero} from "@/components/ui/PageHero";
 
 export default function About() {
     return (
-        <div>
-        <section className={`${styles.first}`}>
-          <div className="container flex justify-center">
-            <div className="max-w-[520px] lg:max-w-[795px] flex flex-col items-center">
-            <h1 className="brigendsExpanded text-[30px] md:text-[35px] lg:text-[50px] text-white text-center mb-7 lg:mb-14">
-              ABOUT ABA
-            </h1>
-            </div>
-          </div>
-        </section>
-        {/* <section className="container mx-auto px-5 py-16 text-center">
+        <main>
+            <PageHero url={"/images/about_page.png"} title={"ABOUT ABA"}/>
+            {/* <section className="container mx-auto px-5 py-16 text-center">
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-wide uppercase">
             ABOUT ABA <br /> CARRIERS INC
           </h2>
@@ -27,6 +19,6 @@ export default function About() {
             industry-leading brokers, and we continue to expand while maintaining the highest standards in transportation.
           </p>
         </section> */}
-        </div>
+        </main>
     )
 }
