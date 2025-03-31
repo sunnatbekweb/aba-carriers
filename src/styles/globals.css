@@ -1,62 +1,95 @@
 @import "tailwindcss";
 
 @font-face {
-    font-family: "Brigends Expanded";
-    src: url(../../public/fonts/BrigendsExpanded.otf);
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Brigends Expanded";
+  src: url(../../public/fonts/BrigendsExpanded.otf);
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: var(--font-poppins), sans-serif;
+  font-family: var(--font-poppins), sans-serif;
 }
 
 .container {
-    margin: 0 auto;
-    padding: 0 20px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .brigendsExpanded {
-    font-family: "Brigends Expanded";
+  font-family: "Brigends Expanded";
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .nav_modal {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 30;
-    background-image: url("../../public/images/nav_bg.png");
-    transition: all 0.3s linear;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  background-image: url("../../public/images/nav_bg.png");
+  transition: all 0.3s linear;
 }
 
 .nav_link-active {
-    & svg {
-        & path {
-            fill: #ff3300;
-        }
+  & svg {
+    & path {
+      fill: #ff3300;
     }
+  }
 }
 
 .contact_modal {
-    position: relative;
+  position: relative;
 
-    &:after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 100%;
-        height: 2px;
-        background: #ff3300;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 2px;
+    background: #ff3300;
+  }
+}
+
+/* Swiper styles */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  border-radius: 30px;
+  width: fit-content !important;
+  height: auto !important;
+  padding: 60px 40px;
+
+  & h4 {
+    color: #ff0000;
+    font-family: "Brigends Expanded";
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  &:nth-child(even) {
+    background: #ff0000;
+    color: #fff;
+
+    & h4 {
+      color: #fff;
     }
+  }
 }
