@@ -72,9 +72,9 @@ button {
   font-size: 18px;
   background: #fff;
   border-radius: 30px;
-  width: fit-content !important;
+  width: 80% !important;
   height: auto !important;
-  padding: 60px 40px;
+  padding: 40px 30px;
 
   & h4 {
     color: #ff0000;
@@ -90,6 +90,46 @@ button {
 
     & h4 {
       color: #fff;
+    }
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: static !important;
+  width: 36px !important;
+  height: 36px !important;
+  margin: 0 !important;
+
+  & svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  &::after {
+    content: "" !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-slide {
+    width: 30% !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .swiper-slide {
+    padding: 60px 40px;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: static !important;
+    width: 60px !important;
+    height: 60px !important;
+
+    & svg {
+      width: 40px !important;
+      height: 40px !important;
     }
   }
 }

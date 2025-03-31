@@ -85,8 +85,8 @@ export default function Carriers() {
           <h3 className="brigendsExpanded text-[28px] lg:text-[35px] xl:text-[45px] text-white tracking-[0.08em] mb-5 lg:mb-[50px]">
             Our features
           </h3>
-          <FeaturedCarousel />
         </div>
+        <FeaturedCarousel />
       </section>
     </>
   );

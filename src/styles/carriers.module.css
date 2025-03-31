@@ -1,7 +1,6 @@
 .second_section {
   background-image: url(../../public/images/carriers_section_image1_sm.png);
   background-position-x: left;
-  background-position-y: 5px;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px 0;
@@ -31,6 +30,7 @@
   .second_section {
     background-image: url(../../public/images/carriers_section_image1_md.png);
     background-size: contain;
+    background-position-y: 5px;
     padding: 65px 0;
   }
 

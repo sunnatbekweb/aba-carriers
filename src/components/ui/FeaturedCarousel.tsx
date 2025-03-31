@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { Button_icon } from "../../../public/icons/Button_icon";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -11,28 +11,43 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 
 export const FeaturedCarousel = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      const prevButton = document.querySelector(".button-prev");
+      const nextButton = document.querySelector(".button-next");
+
+      if (prevButton && nextButton) {
+        prevButton.classList.add("swiper-button-prev");
+        nextButton.classList.add("swiper-button-next");
+      }
+    }, 100);
+  }, []);
+
   return (
     <>
       <div className="flex items-center justify-around mb-5 lg:mb-10">
-        <button className="w-[60px] h-[60px] rounded-full bg-[#ff0000] grid place-content-center pe-1">
+        <button className="button-prev w-[60px] h-[60px] rounded-full bg-[#ff0000] grid place-content-center pe-1">
           <Button_icon />
         </button>
-        <button className="w-[60px] h-[60px] rounded-full bg-[#ff0000] grid place-content-center rotate-180 pe-1">
+        <button className="button-next w-[60px] h-[60px] rounded-full bg-[#ff0000] grid place-content-center rotate-180 pe-1">
           <Button_icon />
         </button>
       </div>
       <Swiper
-        navigation={true}
         slidesPerView={"auto"}
         centeredSlides={true}
         spaceBetween={24}
+        navigation={{
+          nextEl: ".button-next",
+          prevEl: ".button-prev",
+        }}
         modules={[Navigation]}
         loop={true}
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="w-[552px]">
-            <h4 className="text-xl lg:text-2xl xl:text-3xl mb-16 lg:mb-10">
+          <div className="max-w-[500px]">
+            <h4 className="text-xl lg:text-2xl xl:text-3xl mb-5 lg:mb-10">
               Safety and Compliance
             </h4>
             <ol className="flex flex-col gap-y-12">
@@ -47,8 +62,8 @@ export const FeaturedCarousel = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-[552px]">
-            <h4 className="text-xl lg:text-2xl xl:text-3xl mb-16 lg:mb-10">
+          <div className="max-w-[500px]">
+            <h4 className="text-xl lg:text-2xl xl:text-3xl mb-5 lg:mb-10">
               Advanced Technology
             </h4>
             <ol className="flex flex-col gap-y-12">
@@ -63,8 +78,8 @@ export const FeaturedCarousel = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-[552px]">
-            <h4 className="text-xl lg:text-2xl xl:text-3xl mb-16 lg:mb-10">
+          <div className="max-w-[500px]">
+            <h4 className="text-xl lg:text-2xl xl:text-3xl mb-5 lg:mb-10">
               Reliable Fleet
             </h4>
             <ol className="flex flex-col gap-y-12">
@@ -76,8 +91,8 @@ export const FeaturedCarousel = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-[552px]">
-            <h4 className="text-xl lg:text-2xl xl:text-3xl mb-16 lg:mb-10">
+          <div className="max-w-[500px]">
+            <h4 className="text-xl lg:text-2xl xl:text-3xl mb-5 lg:mb-10">
               Around-the-Clock Support
             </h4>
             <ol className="flex flex-col gap-y-12">
@@ -89,8 +104,8 @@ export const FeaturedCarousel = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-[552px]">
-            <h4 className="text-xl lg:text-2xl xl:text-3xl mb-16 lg:mb-10">
+          <div className="max-w-[500px]">
+            <h4 className="text-xl lg:text-2xl xl:text-3xl mb-5 lg:mb-10">
               Highly Skilled Drivers
             </h4>
             <ol className="flex flex-col gap-y-12">
