@@ -87,9 +87,38 @@ export default function Carriers() {
         </div>
         <FeaturedCarousel />
       </section>
-      <section>
+      <section className="py-[50px] lg:py-[65px] xl:py-[80px]">
         <div className="container">
-
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-5 gap-x-6">
+            {[...Array(6)].map((_, index) => (
+              <div key={index}>
+                <div className="p-5 flex justify-center items-center">
+                  <Image
+                    src={"/icons/logos/logo1.svg"}
+                    width={500}
+                    height={210}
+                    alt="Logo"
+                  />
+                </div>
+                <div className="w-full h-[25px] bg-[#263C8E]"></div>
+                <div className="px-6 py-5 lg:px-[50px] lg:py-[30px]">
+                  <h4 className="brigendsExpanded text-3xl xl:text-4xl tracking-[0.08em] text-center text-[#263C8E]">
+                    Greig Mare
+                  </h4>
+                  <p className="text-base lg:text-lg xl:text-xl tracking-[0.08em] text-center mt-5 lg:mt-[30px]">
+                    It is not often I praise our respective carrier/partners,
+                    but I will emphasis ABA Carriers to be one of the very best
+                    carriers out there and with the upmost respect.  Their
+                    communications, technology, service, and professionalism, by
+                    far exceeds my firms' expectations. I strongly suggest to
+                    utilize their fleet given their footprint for capacity
+                    offerings. Thank you
+                  </p>
+                </div>
+                <div className="w-full h-[25px] bg-[#263C8E]"></div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </>
