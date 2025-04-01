@@ -26,6 +26,12 @@
   }
 }
 
+.logo {
+  & svg {
+    object-fit: contain;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .second_section {
     background-image: url(../../public/images/carriers_section_image1_md.png);

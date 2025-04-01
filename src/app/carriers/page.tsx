@@ -1,9 +1,10 @@
-import { PageHero } from "@/components/ui/PageHero";
-import BgImage from "../../../public/images/page_hero/carriers_hero_bg.png";
-import styles from "@/styles/carriers.module.css";
 import Image from "next/image";
+import BgImage from "../../../public/images/page_hero/carriers_hero_bg.png";
+import { PageHero } from "@/components/ui/PageHero";
 import { FeaturedCarousel } from "@/components/ui/FeaturedCarousel";
 import { BottomGradient } from "@/components/ui/BottomGradient";
+import { Carriers_logo } from "@/data/Carriers";
+import styles from "@/styles/carriers.module.css";
 
 export default function Carriers() {
   return (
@@ -91,32 +92,32 @@ export default function Carriers() {
       <section className="py-[50px] lg:py-[65px] xl:py-[80px]">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-5 gap-x-6">
-            {[...Array(6)].map((_, index) => (
-              <div key={index}>
-                <div className="p-5 flex justify-center items-center">
-                  <Image
-                    src={"/icons/logos/logo1.svg"}
-                    width={500}
-                    height={210}
-                    alt="Logo"
-                  />
+            {Carriers_logo.map((_, index) => (
+              <div className="h-full flex flex-col justify-between" key={index}>
+                <div>
+                  <div className={`${styles.logo} w-full h-[140px] lg:h-[180px] xl:h-[210px] p-5 flex justify-center items-center`}>
+                    <_.logo />
+                  </div>
+                  <div
+                    className="w-full h-[25px]"
+                    style={{ backgroundColor: _.color }}
+                  ></div>
+                  <div className="px-6 py-5 lg:px-7 xl:px-[50px] lg:py-[30px]">
+                    <h4
+                      className="brigendsExpanded text-3xl xl:text-4xl tracking-[0.08em] text-center"
+                      style={{ color: _.color }}
+                    >
+                      {_.title}
+                    </h4>
+                    <p className="text-base lg:text-lg xl:text-xl tracking-[0.08em] text-center mt-5 lg:mt-[30px]">
+                      {_.description}
+                    </p>
+                  </div>
                 </div>
-                <div className="w-full h-[25px] bg-[#263C8E]"></div>
-                <div className="px-6 py-5 lg:px-7 xl:px-[50px] lg:py-[30px]">
-                  <h4 className="brigendsExpanded text-3xl xl:text-4xl tracking-[0.08em] text-center text-[#263C8E]">
-                    Greig Mare
-                  </h4>
-                  <p className="text-base lg:text-lg xl:text-xl tracking-[0.08em] text-center mt-5 lg:mt-[30px]">
-                    It is not often I praise our respective carrier/partners,
-                    but I will emphasis ABA Carriers to be one of the very best
-                    carriers out there and with the upmost respect.  Their
-                    communications, technology, service, and professionalism, by
-                    far exceeds my firms' expectations. I strongly suggest to
-                    utilize their fleet given their footprint for capacity
-                    offerings. Thank you
-                  </p>
-                </div>
-                <div className="w-full h-[25px] bg-[#263C8E]"></div>
+                <div
+                  className="w-full h-[25px] mt-auto"
+                  style={{ backgroundColor: _.color }}
+                ></div>
               </div>
             ))}
           </div>
