@@ -3,6 +3,7 @@ import BgImage from "../../../public/images/page_hero/carriers_hero_bg.png";
 import styles from "@/styles/carriers.module.css";
 import Image from "next/image";
 import { FeaturedCarousel } from "@/components/ui/FeaturedCarousel";
+import { BottomGradient } from "@/components/ui/BottomGradient";
 
 export default function Carriers() {
   return (
@@ -13,7 +14,7 @@ export default function Carriers() {
           "relative bg-[#1C2016] text-white py-[50px] md:py-[70px] lg:py-[190px]"
         }
       >
-        <div className={"container"}>
+        <div className={"container px-5"}>
           <div className={"w-full lg:w-1/2 lg:pr-14"}>
             <div
               className={
@@ -56,7 +57,7 @@ export default function Carriers() {
         </div>
       </section>
       <section className={`${styles.second_section}`}>
-        <div className="container flex lg:justify-end">
+        <div className="container px-5 flex lg:justify-end">
           <div className="lg:w-1/2">
             <h3 className={`${styles.second_section_title} brigendsExpanded`}>
               What sets ABA apart
@@ -80,7 +81,7 @@ export default function Carriers() {
         </div>
       </section>
       <section className="bg-[#1C2016] py-20">
-        <div className="container">
+        <div className="container px-5">
           <h3 className="brigendsExpanded text-[28px] lg:text-[35px] xl:text-[45px] text-white tracking-[0.08em] mb-5 lg:mb-[50px]">
             Our features
           </h3>
@@ -101,7 +102,7 @@ export default function Carriers() {
                   />
                 </div>
                 <div className="w-full h-[25px] bg-[#263C8E]"></div>
-                <div className="px-6 py-5 lg:px-[50px] lg:py-[30px]">
+                <div className="px-6 py-5 lg:px-7 xl:px-[50px] lg:py-[30px]">
                   <h4 className="brigendsExpanded text-3xl xl:text-4xl tracking-[0.08em] text-center text-[#263C8E]">
                     Greig Mare
                   </h4>
@@ -121,6 +122,9 @@ export default function Carriers() {
           </div>
         </div>
       </section>
+      <div className={`h-14 hidden lg:block`}>
+        <BottomGradient />
+      </div>
     </>
   );
 }

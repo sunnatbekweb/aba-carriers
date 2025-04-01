@@ -5,13 +5,14 @@ import { Navbar } from "@/components/ui/Navbar";
 import styles from "@/styles/homepage.module.css";
 import Link from "next/link";
 import { TruckImages } from "@/components/ui/TruckImages";
+import { BottomGradient } from "@/components/ui/BottomGradient";
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <section className={`${styles.intro}`}>
-        <div className="container flex justify-center">
+        <div className="container px-5 flex justify-center">
           <div className="max-w-[520px] lg:max-w-[795px] flex flex-col items-center">
             <h1 className="brigendsExpanded text-[30px] md:text-[35px] lg:text-[50px] text-white text-center mb-7 lg:mb-14">
               Your belongings are in safe hands
@@ -27,7 +28,7 @@ export default function Home() {
         id={"carriers"}
         className="py-10 md:py-20 lg:py-40 bg-[#1C2016] text-white overflow-hidden"
       >
-        <div className="container flex items-center justify-between">
+        <div className="container px-5 flex items-center justify-between">
           <div className="max-w-[795px]">
             <Image
               src={"/icons/truck.svg"}
@@ -58,7 +59,7 @@ export default function Home() {
         id={"drive"}
         className={`${styles.third_section} text-white lg:text-black`}
       >
-        <div className="container flex flex-col items-start lg:items-end">
+        <div className="container px-5 flex flex-col items-start lg:items-end">
           <Image
             src={"/icons/wheel.svg"}
             width={60}
@@ -83,9 +84,9 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <div className={`${styles.section_bottom_gradient} h-14`}></div>
+      <BottomGradient />
       <section id={"services"} className={`${styles.services}`}>
-        <div className="container flex items-center justify-between">
+        <div className="container px-5 flex items-center justify-between">
           <div>
             <Image
               src={"/icons/operator.svg"}
@@ -128,7 +129,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <div className={`${styles.section_bottom_gradient} h-14`}></div>
+      <BottomGradient />
       <section
         id={"about"}
         className={`${styles.carriers} pb-[60px] lg:py-[125px]`}
@@ -142,7 +143,7 @@ export default function Home() {
             alt="Carriers section image"
           />
         </div>
-        <div className="container">
+        <div className="container px-5">
           <div className="lg:w-1/2 flex flex-col items-end ml-auto pl-5">
             <Image
               src={"/icons/carriers_icon.svg"}
@@ -169,9 +170,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div
-        className={`${styles.section_bottom_gradient} h-14 hidden lg:block`}
-      ></div>
+      <div className={`h-14 hidden lg:block`}>
+        <BottomGradient />
+      </div>
     </>
   );
 }
