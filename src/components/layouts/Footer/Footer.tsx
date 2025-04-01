@@ -10,7 +10,7 @@ export const Footer = () => {
         <div className="pl-[30px]">
           <div className="w-fit absolute left-1/2 -translate-x-1/2 top-[10px] md:left-[25px] md:translate-x-0 md:top-[10px] lg:top-10 lg:left-[115px]">
             <Image
-              src={"/icons/Logo_red.svg"}
+              src={"/icons/footer_icons/Logo_red.svg"}
               width={160}
               height={65}
               alt="Logo"
@@ -22,7 +22,7 @@ export const Footer = () => {
           <div className="pt-[160px] grid grid-cols-1 gap-y-10 items-center md:grid-cols-2 lg:items-start lg:grid-cols-4 lg:gap-x-10 justify-between">
             <div className="flex flex-col items-center md:flex-row md:items-start gap-x-5">
               <Image
-                src={"/icons/email.svg"}
+                src={"/icons/footer_icons/email.svg"}
                 width={40}
                 height={40}
                 alt="Email icon"
@@ -79,7 +79,7 @@ export const Footer = () => {
             </div>
             <div className="flex flex-col items-center md:flex-row md:items-start gap-x-5">
               <Image
-                src={"/icons/location.svg"}
+                src={"/icons/footer_icons/location.svg"}
                 width={40}
                 height={40}
                 alt="Email icon"
@@ -102,7 +102,7 @@ export const Footer = () => {
             </div>
             <div className="flex flex-col items-center md:flex-row md:items-start gap-x-5">
               <Image
-                src={"/icons/phone.svg"}
+                src={"/icons/footer_icons/phone.svg"}
                 width={40}
                 height={40}
                 alt="Email icon"

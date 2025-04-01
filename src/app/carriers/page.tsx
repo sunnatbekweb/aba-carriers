@@ -2,7 +2,6 @@ import { PageHero } from "@/components/ui/PageHero";
 import BgImage from "../../../public/images/page_hero/carriers_hero_bg.png";
 import styles from "@/styles/carriers.module.css";
 import Image from "next/image";
-import { Button_icon } from "../../../public/icons/Button_icon";
 import { FeaturedCarousel } from "@/components/ui/FeaturedCarousel";
 
 export default function Carriers() {
@@ -87,6 +86,11 @@ export default function Carriers() {
           </h3>
         </div>
         <FeaturedCarousel />
+      </section>
+      <section>
+        <div className="container">
+
+        </div>
       </section>
     </>
   );

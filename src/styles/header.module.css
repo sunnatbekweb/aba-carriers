@@ -7,7 +7,7 @@
 
 .logo {
   position: relative;
-  background-image: url(../../public/icons/logo_bg.svg);
+  background-image: url(../../public/icons/header_icons/logo_bg.svg);
   background-position-x: right;
   background-size: cover;
   background-repeat: no-repeat;
