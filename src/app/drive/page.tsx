@@ -182,7 +182,7 @@ export default function Drive() {
             src={"/images/drive/image2.png"}
             width={1020}
             height={840}
-            className="w-full h-[450px] lg:h-full object-cover"
+            className="w-full h-auto sm:h-[450px] lg:h-full object-cover"
             alt="Drive section image"
           />
         </div>
