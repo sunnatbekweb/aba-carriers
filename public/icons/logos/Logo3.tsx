@@ -4,8 +4,9 @@ export const Logo3 = () => {
   return (
     <svg
       width="249"
-      height="209"
+      height="130"
       viewBox="0 0 249 209"
+      style={{ objectFit: "contain" }}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >

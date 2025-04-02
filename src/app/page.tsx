@@ -139,7 +139,7 @@ export default function Home() {
             src={"/images/carriers_image.png"}
             width={960}
             height={1020}
-            className="h-full w-full"
+            className="h-[400px] lg:h-full w-full object-cover"
             alt="Carriers section image"
           />
         </div>

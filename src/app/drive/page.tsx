@@ -1,10 +1,209 @@
-import {PageHero} from "@/components/ui/PageHero";
-import BgImage from "../../../public/images/page_hero/drive_hero.png"
+import { PageHero } from "@/components/ui/PageHero";
+import BgImage from "../../../public/images/page_hero/drive_hero.png";
+import Image from "next/image";
+import { BottomGradient } from "@/components/ui/BottomGradient";
 
 export default function Drive() {
-    return (
-        <>
-            <PageHero url={BgImage.src} title={"Drive For ABA"}/>
-        </>
-    )
+  return (
+    <>
+      <PageHero url={BgImage.src} title={"Drive For ABA"} />
+      <section className="py-[50px] lg:py-[105px] xl:py-[180px] relative">
+        <div className="container px-5 text-white lg:text-black">
+          <div className="w-full lg:w-1/2 flex flex-col gap-y-5 lg:gap-y-10 xl:gap-y-[65px] lg:pr-16 xl:pr-[120px]">
+            <h2 className="brigendsExpanded text-[24px] lg:text-4xl xl:text-[40px] tracking-[0.08em] uppercase border-b-2 border-[#ff0000] pb-5 lg:pb-[15px] xl:pb-[30px]">
+              Your road to success starts here
+            </h2>
+            <p className="text-base lg:text-lg xl:text-2xl tracking-[0.08em]">
+              At ABA, we are committed to providing stable income and excellent
+              working conditions for both owner-operators and company drivers.
+              As we expand to meet the growing demand for freight transportation
+              across the United States, we are seeking experienced drivers to
+              partner with us
+            </p>
+          </div>
+        </div>
+        <div className="w-full lg:w-1/2 h-full absolute right-0 top-0 -z-10">
+          <Image
+            src={"/images/drive/image1.png"}
+            width={1020}
+            height={840}
+            className="w-full h-full object-cover"
+            alt="Drive section image"
+          />
+        </div>
+      </section>
+      <BottomGradient />
+      <section className="py-[50px] lg:py-20 xl:py-[100px]">
+        <div className="container px-5 flex flex-col gap-y-10">
+          <div className="flex flex-col xl:flex-row-reverse items-center gap-x-12 gap-y-10">
+            <div className="md:w-[60%] xl:w-1/2 ml-auto">
+              <h2 className="brigendsExpanded text-[24px] lg:text-4xl xl:text-[40px] tracking-[0.08em] md:text-right uppercase border-b-2 border-[#ff0000] pb-5 lg:pb-[15px] xl:pb-[30px]">
+                Join Our Team as an company driver
+              </h2>
+              <p className="text-base lg:text-lg xl:text-2xl tracking-[0.08em] md:text-right mt-5 lg:mt-10 xl:mt-[65px]">
+                We value our drivers and offer excellent career growth
+                opportunities. Join our team and enjoy the freedom of the open
+                road while building a rewarding career with competitive pay and
+                top-notch working conditions
+              </p>
+            </div>
+            <div className="bg-clip lg:w-[60%] xl:w-1/2">
+              <ol
+                start={1}
+                className="list-decimal list-inside text-white font-bold pl-4 xl:pl-0"
+              >
+                <li className="py-2 text-base lg:text-lg xl:text-xl">
+                  Long runs for team drivers
+                </li>
+                <li className="py-2 text-base lg:text-lg xl:text-xl">
+                  Non-forced, friendly, professional, experienced 24/7 dispatch
+                </li>
+                <li className="py-2 text-base lg:text-lg xl:text-xl">
+                  Market or above market level pay
+                </li>
+                <li className="py-2 text-base lg:text-lg xl:text-xl">
+                  Weekly direct deposit. Always on time!
+                </li>
+                <li className="py-2 text-base lg:text-lg xl:text-xl">
+                  1099 Tax Form.
+                </li>
+                <li className="py-2 text-base lg:text-lg xl:text-xl">
+                  We run all 48 continental USA states
+                </li>
+              </ol>
+            </div>
+          </div>
+          <div className="flex flex-col xl:flex-row xl:items-center gap-x-12 gap-y-10">
+            <div className="md:w-[60%] xl:w-1/2">
+              <h2 className="brigendsExpanded text-[24px] lg:text-4xl xl:text-[40px] tracking-[0.08em] uppercase border-b-2 border-[#ff0000] pb-5 lg:pb-[15px] xl:pb-[30px]">
+                Join Our Team as an Owner-Operator
+              </h2>
+              <p className="text-base lg:text-lg xl:text-2xl tracking-[0.08em] mt-5 lg:mt-10 xl:mt-[65px]">
+                We value our drivers and offer excellent career growth
+                opportunities. Join our team and enjoy the freedom of the open
+                road while building a rewarding career with competitive pay and
+                top-notch working conditions
+              </p>
+            </div>
+            <div className="bg-clip lg:w-[60%] xl:w-1/2 lg:ml-auto">
+              <ol
+                start={1}
+                className="list-decimal list-inside text-white font-bold pl-4 xl:pl-0 md:text-right xl:text-left md:flex flex-col items-end"
+              >
+                <li className="py-2 text-base lg:text-lg xl:text-xl w-fit xl:w-full">
+                  Pay 12% of gross revenue
+                </li>
+                <li className="py-2 text-base lg:text-lg xl:text-xl w-fit xl:w-full">
+                  Non-forced, friendly, professional, experienced 24/7 dispatch
+                </li>
+                <li className="py-2 text-base lg:text-lg xl:text-xl w-fit xl:w-full">
+                  Weekly direct deposit. Always on time!
+                </li>
+                <li className="py-2 text-base lg:text-lg xl:text-xl w-fit xl:w-full">
+                  1099 Tax Form.
+                </li>
+                <li className="py-2 text-base lg:text-lg xl:text-xl w-fit xl:w-full">
+                  Only Full TL (no partials no headaches)
+                </li>
+                <li className="py-2 text-base lg:text-lg xl:text-xl w-fit xl:w-full">
+                  ELDs
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#1c2016] py-[50px] xl:py-[75px]">
+        <div className="container px-5">
+          <div className="w-full md:w-[70%] xl:w-1/2 text-white mb-10">
+            <h3 className="brigendsExpanded text-[24px] lg:text-[32px] tracking-[0.08em] uppercase mb-5">
+              quick pre-qualify form
+            </h3>
+            <p className="text-base lg:text-lg xl:text-xl tracking-[0.08em]">
+              if you have Tractor-Trailar Experience, fill out our Pre Qualify
+              form and a recruiter will you shortly
+            </p>
+          </div>
+          <form className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-10">
+            <label htmlFor="fullName" className="flex flex-col gap-y-2.5">
+              <span className="text-base lg:text-lg text-[#FF0000] tracking-[0.08em]">
+                Full Name
+              </span>
+              <input
+                type="text"
+                name="fullName"
+                id="fullName"
+                className="p-4 bg-white placeholder:text-[#828282] rounded-lg"
+                placeholder="Enter your name"
+              />
+            </label>
+            <label htmlFor="CityState" className="flex flex-col gap-y-2.5">
+              <span className="text-base lg:text-lg text-[#FF0000] tracking-[0.08em]">
+                City | State
+              </span>
+              <input
+                type="text"
+                name="CityState"
+                id="CityState"
+                className="p-4 bg-white placeholder:text-[#828282] rounded-lg"
+                placeholder="Enter your city or state"
+              />
+            </label>
+            <label htmlFor="email" className="flex flex-col gap-y-2.5">
+              <span className="text-base lg:text-lg text-[#FF0000] tracking-[0.08em]">
+                Your Email
+              </span>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                className="p-4 bg-white placeholder:text-[#828282] rounded-lg"
+                placeholder="Enter your email"
+              />
+            </label>
+            <label htmlFor="Phone" className="flex flex-col gap-y-2.5">
+              <span className="text-base lg:text-lg text-[#FF0000] tracking-[0.08em]">
+                Your Phone
+              </span>
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                className="p-4 bg-white placeholder:text-[#828282] rounded-lg"
+                placeholder="Enter your phone"
+              />
+            </label>
+          </form>
+        </div>
+      </section>
+      <section className="relative lg:py-[95px] xl:py-[115px]">
+        <div className="w-full lg:w-1/2 h-full lg:absolute left-0 top-0">
+          <Image
+            src={"/images/drive/image2.png"}
+            width={1020}
+            height={840}
+            className="w-full h-[450px] lg:h-full object-cover"
+            alt="Drive section image"
+          />
+        </div>
+        <div className="container px-5 text-black">
+          <div className="drive_section_top hidden lg:block"></div>
+          <div className="w-full lg:w-1/2 flex flex-col ml-auto gap-y-5 lg:gap-y-10 xl:gap-y-[65px] lg:pl-12 py-10 lg:py-0">
+            <h2 className="brigendsExpanded text-xl lg:text-3xl xl:text-4xl tracking-[0.08em] uppercase lg:text-right border-b-2 border-[#ff0000] pb-5 lg:pb-[15px] xl:pb-[30px]">
+              Driver qualifications minimum requirements
+            </h2>
+            <p className="text-base lg:text-lg xl:text-2xl tracking-[0.08em] lg:text-right">
+              ⁃ Valid Commercial Driver’s License Class A ⁃ Clean Driving
+              Record: Safe and reliable driving history. ⁃ Experience: At least
+              1year of professional driving experience preferred ⁃ Strong Work
+              Ethic: Commitment to safety, timeliness, and customer service ⁃
+              Must be able to meet minimum medical qualifications set by the
+              Federal Motor Carrier Safety Administration
+            </p>
+          </div>
+          <div className="drive_section_bottom hidden lg:block xl:hidden"></div>
+        </div>
+      </section>
+    </>
+  );
 }

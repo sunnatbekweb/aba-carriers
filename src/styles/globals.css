@@ -1,8 +1,14 @@
 @import "tailwindcss";
 
+:root {
+  --primary-color: #ff3300;
+  --secondary-color: #ffffff;
+  --text-color: #000000;
+}
+
 @font-face {
   font-family: "Brigends Expanded";
-  src: url(../../public/fonts/BrigendsExpanded.otf);
+  src: url("/fonts/BrigendsExpanded.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -27,40 +33,68 @@ button {
   cursor: pointer;
 }
 
+/* ========== NAVIGATION MODAL ========== */
 .nav_modal {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 30;
-  background-image: url("../../public/images/nav_bg.png");
-  transition: all 0.3s linear;
+  @apply fixed top-0 left-0 w-full h-screen z-30 transition-all duration-300;
+  background-image: url("/images/nav_bg.png");
 }
 
-.nav_link-active {
-  & svg {
-    & path {
-      fill: #ff3300;
-    }
-  }
+/* Активный цвет иконки в навигации */
+.nav_link-active svg path {
+  fill: var(--primary-color);
 }
 
+/* ========== CONTACT MODAL ========== */
 .contact_modal {
-  position: relative;
+  @apply relative;
 
-  &:after {
+  &::after {
+    @apply absolute top-1/2 w-full h-[2px] bg-red-500;
     content: "";
-    position: absolute;
-    top: 50%;
     transform: translateY(-50%);
-    width: 100%;
-    height: 2px;
-    background: #ff3300;
   }
 }
 
-/* Swiper styles */
+/* ========== BACKGROUND CLIP ========== */
+.bg-clip {
+  box-shadow: 0 0 0 100vmax var(--primary-color);
+  background: var(--primary-color);
+  clip-path: inset(0 -100vmax);
+  padding: 5px 0 3px;
+  height: fit-content;
+  counter-reset: list-counter;
+}
+
+.bg-clip li {
+  counter-increment: list-counter;
+  padding-left: 40px;
+  list-style: none;
+  position: relative;
+}
+
+.bg-clip li::before {
+  content: counter(list-counter) ".";
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.bg-clip li:last-child {
+  box-shadow: 0 0 0 100vmax var(--secondary-color);
+  background: var(--secondary-color);
+  clip-path: inset(0 -100vmax);
+  color: var(--text-color);
+  padding: 12px 40px 12px;
+}
+
+.bg-clip li:last-child::before {
+  color: var(--text-color);
+}
+
+/* ========== SWIPER STYLES ========== */
 
 .swiper {
   width: 100%;
@@ -110,6 +144,28 @@ button {
   }
 }
 
+/* ========== Drive page Styles ========== */
+
+.drive_section_top {
+  background: linear-gradient(90deg, #2a262c 0%, #f5f7f2 95%);
+  transform: rotate(-180deg);
+  width: 50%;
+  height: 43px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.drive_section_bottom {
+  background: linear-gradient(90deg, #2a262c 0%, #2e454d 100%);
+  transform: rotate(-180deg);
+  width: 50%;
+  height: 43px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 @media screen and (min-width: 768px) {
   .swiper-slide {
     width: 30% !important;
@@ -130,5 +186,21 @@ button {
       width: 40px !important;
       height: 40px !important;
     }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .bg-clip {
+    box-shadow: none;
+    clip-path: none;
+    padding: 5px 0 0;
+    border-radius: 25px 25px 0 0;
+    border: 5px solid var(--primary-color);
+  }
+
+  .bg-clip li:last-child {
+    box-shadow: none;
+    background: var(--secondary-color);
+    clip-path: none;
   }
 }

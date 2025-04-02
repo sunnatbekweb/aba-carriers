@@ -49,7 +49,7 @@ export default function Carriers() {
         </div>
         <div className={"hidden lg:block absolute w-1/2 h-full top-0 right-0"}>
           <Image
-            src={"/images/carriers_section_image.png"}
+            src={"/images/carriers/carriers_section_image.png"}
             width={940}
             height={900}
             className={"w-full h-full object-cover"}
@@ -95,7 +95,9 @@ export default function Carriers() {
             {Carriers_logo.map((_, index) => (
               <div className="h-full flex flex-col justify-between" key={index}>
                 <div>
-                  <div className={`${styles.logo} w-full h-[140px] lg:h-[180px] xl:h-[210px] p-5 flex justify-center items-center`}>
+                  <div
+                    className={`${styles.logo} w-full h-[140px] lg:h-[180px] xl:h-[210px] p-5 flex justify-center items-center`}
+                  >
                     <_.logo />
                   </div>
                   <div
