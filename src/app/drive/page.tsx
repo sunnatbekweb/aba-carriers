@@ -2,6 +2,7 @@ import { PageHero } from "@/components/ui/PageHero";
 import BgImage from "../../../public/images/page_hero/drive_hero.png";
 import Image from "next/image";
 import { BottomGradient } from "@/components/ui/BottomGradient";
+import { DriveForm } from "@/components/ui/DriveForm";
 
 export default function Drive() {
   return (
@@ -124,56 +125,7 @@ export default function Drive() {
               form and a recruiter will you shortly
             </p>
           </div>
-          <form className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-10">
-            <label htmlFor="fullName" className="flex flex-col gap-y-2.5">
-              <span className="text-base lg:text-lg text-[#FF0000] tracking-[0.08em]">
-                Full Name
-              </span>
-              <input
-                type="text"
-                name="fullName"
-                id="fullName"
-                className="p-4 bg-white placeholder:text-[#828282] rounded-lg"
-                placeholder="Enter your name"
-              />
-            </label>
-            <label htmlFor="CityState" className="flex flex-col gap-y-2.5">
-              <span className="text-base lg:text-lg text-[#FF0000] tracking-[0.08em]">
-                City | State
-              </span>
-              <input
-                type="text"
-                name="CityState"
-                id="CityState"
-                className="p-4 bg-white placeholder:text-[#828282] rounded-lg"
-                placeholder="Enter your city or state"
-              />
-            </label>
-            <label htmlFor="email" className="flex flex-col gap-y-2.5">
-              <span className="text-base lg:text-lg text-[#FF0000] tracking-[0.08em]">
-                Your Email
-              </span>
-              <input
-                type="text"
-                name="email"
-                id="email"
-                className="p-4 bg-white placeholder:text-[#828282] rounded-lg"
-                placeholder="Enter your email"
-              />
-            </label>
-            <label htmlFor="Phone" className="flex flex-col gap-y-2.5">
-              <span className="text-base lg:text-lg text-[#FF0000] tracking-[0.08em]">
-                Your Phone
-              </span>
-              <input
-                type="text"
-                name="phone"
-                id="phone"
-                className="p-4 bg-white placeholder:text-[#828282] rounded-lg"
-                placeholder="Enter your phone"
-              />
-            </label>
-          </form>
+          <DriveForm />
         </div>
       </section>
       <section className="relative lg:py-[95px] xl:py-[115px]">
