@@ -33,7 +33,10 @@ export const ContactModal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
           }
         >
           <h4 className={"text-xl lg:text-[40px] font-bold"}>Hiring</h4>
-          <a href={"tel:+12404498888"} className={"text-base lg:text-[26px] font-semibold"}>
+          <a
+            href={"tel:+12404498888"}
+            className={"text-base lg:text-[26px] font-semibold"}
+          >
             +1 240-449-8888
           </a>
         </li>
@@ -43,7 +46,10 @@ export const ContactModal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
           }
         >
           <h4 className={"text-xl lg:text-[40px] font-bold"}>Dispatch</h4>
-          <a href={"tel:+16103335555"} className={"text-base lg:text-[26px] font-semibold"}>
+          <a
+            href={"tel:+16103335555"}
+            className={"text-base lg:text-[26px] font-semibold"}
+          >
             +1 610-333-5555
           </a>
         </li>
@@ -53,7 +59,10 @@ export const ContactModal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
           }
         >
           <h4 className={"text-xl lg:text-[40px] font-bold"}>Accounting</h4>
-          <a href={"tel:+17712104444"} className={"text-base lg:text-[26px] font-semibold"}>
+          <a
+            href={"tel:+17712104444"}
+            className={"text-base lg:text-[26px] font-semibold"}
+          >
             +1 771-210-4444
           </a>
         </li>
@@ -63,7 +72,10 @@ export const ContactModal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
           }
         >
           <h4 className={"text-xl lg:text-[40px] font-bold"}>Fleet</h4>
-          <a href={"tel:+15028053333"} className={"text-base lg:text-[26px] font-semibold"}>
+          <a
+            href={"tel:+15028053333"}
+            className={"text-base lg:text-[26px] font-semibold"}
+          >
             +1 502-805-3333
           </a>
         </li>
@@ -73,7 +85,10 @@ export const ContactModal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
           }
         >
           <h4 className={"text-xl lg:text-[40px] font-bold"}>Safety</h4>
-          <a href={"tel:+16674071111"} className={"text-base lg:text-[26px] font-semibold"}>
+          <a
+            href={"tel:+16674071111"}
+            className={"text-base lg:text-[26px] font-semibold"}
+          >
             +1 667-407-1111
           </a>
         </li>
@@ -83,7 +98,10 @@ export const ContactModal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
           }
         >
           <h4 className={"text-xl lg:text-[40px] font-bold"}>Owner</h4>
-          <a href={"tel:+15138998888"} className={"text-base lg:text-[26px] font-semibold"}>
+          <a
+            href={"tel:+15138998888"}
+            className={"text-base lg:text-[26px] font-semibold"}
+          >
             +1 513 899 8888
           </a>
         </li>
