@@ -1,5 +1,5 @@
 import { PageHero } from "@/components/ui/PageHero";
-import BgImage from "../../../public/images/page_hero/drive_hero.png";
+import BgImage from "../../../public/images/page_hero/drive_hero.webp";
 import Image from "next/image";
 import { BottomGradient } from "@/components/ui/BottomGradient";
 import { DriveForm } from "@/components/ui/DriveForm";
@@ -114,7 +114,7 @@ export default function Drive() {
           </div>
         </div>
       </section>
-      <section className="bg-[#1c2016] py-[50px] xl:py-[75px]">
+      <section id="form" className="bg-[#1c2016] py-[50px] xl:py-[75px]">
         <div className="container px-5">
           <div className="w-full md:w-[70%] xl:w-1/2 text-white mb-10">
             <h3 className="brigendsExpanded text-[24px] lg:text-[32px] tracking-[0.08em] uppercase mb-5">

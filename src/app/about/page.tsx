@@ -1,5 +1,5 @@
 import { PageHero } from "@/components/ui/PageHero";
-import BgImage from "../../../public/images/page_hero/about_page.png";
+import BgImage from "../../../public/images/page_hero/about_page.webp";
 
 export default function About() {
   return (
@@ -25,65 +25,49 @@ export default function About() {
           expand while maintaining the highest standards in transportation.
         </p>
       </section>
-      <section className="bg-[#1b2016] text-white py-12 md:py-16 px-4 sm:px-6 w-full max-w-[1920px] min-h-[550px] mx-auto">
-        <div className="mx-auto max-w-[1200px]">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10">
-            <div className=" mb-12 sm:mb-0 text-center md:text-start">
-              <p className="text-white text-lg tracking-[0.2em] mb-6 leading-snug font-light">
-                <span className="block">Total Loads</span>
-                <span className="block">Delivered:</span>
+      <section className="bg-[#1b2016] text-white py-12 md:py-16">
+        <div className="container px-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-15 gap-x-10">
+            <div className="flex flex-col gap-y-2.5 lg:gap-y-6">
+              <p className="md:text-lg text-center lg:text-left">
+                Total Loads Delivered:
               </p>
-              <p className="brigendsExpanded text-2xl tracking-[0.2em] leading-[1.1]">
-                <span className="block">TENS OF</span>
-                <span className="block">THOUSANDS</span>
-              </p>
+              <h4 className="brigendsExpanded text-xl sm:text-2xl lg:text-xl 2xl:text-3xl text-center lg:text-left">
+                Tens of thousands
+              </h4>
             </div>
-
-            <div className=" mb-12 sm:mb-0 text-center md:text-start">
-              <p className="text-white text-lg tracking-[0.2em] mb-6 leading-snug font-light">
-                <span className="block">Miles Covered</span>
-                <span className="block">Annually:</span>
+            <div className="flex flex-col gap-y-2.5 lg:gap-y-6">
+              <p className="md:text-lg text-center lg:text-left">
+                Miles Covered Annually:
               </p>
-              <p className="brigendsExpanded text-2xl tracking-[0.2em] leading-[1.1]">
-                <span className="block">HUNDREDS</span>
-                <span className="block">OF</span>
-                <span className="block">THOUSANDS</span>
-              </p>
+              <h4 className="brigendsExpanded text-xl sm:text-2xl lg:text-xl 2xl:text-3xl text-center lg:text-left">
+                Hundreds of thousands
+              </h4>
             </div>
-
-            <div className=" mb-12 sm:mb-0 text-center md:text-start">
-              <p className="text-white text-lg tracking-[0.2em] mb-6 leading-snug font-light">
-                <span className="block">Satisfied</span>
-                <span className="block">Clients:</span>
+            <div className="flex flex-col gap-y-2.5 lg:gap-y-6">
+              <p className="lg:text-lg text-center lg:text-left">
+                Satisfied Clients:
               </p>
-              <p className="font-bold text-2xl sm:text-6xl tracking-[0.05em] leading-none">
+              <h4 className="font-sans text-3xl lg:text-5xl font-black text-center lg:text-left">
                 200+
-              </p>
+              </h4>
             </div>
-
-            <div className="">
-              <p className="text-white text-lg tracking-[0.2em] mb-6 leading-snug font-light">
-                <span className="block">Team Size:</span>
-              </p>
-              <div className="brigendsExpanded text-2xl tracking-[0.2em] leading-[1.1] text-center md:text-start">
-                <span className="block">NEARLY</span>
-                <span className="font-sans font-bold text-4xl sm:text-5xl">
+            <div className="flex flex-col gap-y-2.5 lg:gap-y-6">
+              <p className="md:text-lg text-center lg:text-left">Team Size:</p>
+              <h4 className="brigendsExpanded text-2xl lg:text-xl 2xl:text-3xl text-center lg:text-left">
+                Nearly{" "}
+                <span className="font-sans text-2xl lg:text-3xl font-black">
                   200
-                </span>
-                <span className="block">EMPLOYEES</span>
-              </div>
+                </span>{" "}
+                employees
+              </h4>
             </div>
           </div>
-
-          <div className="mt-16 sm:mt-20 text-center">
-            <p className="text-white text-lg sm:text-xl tracking-[0.2em] mb-4 font-light">
-              Industry Trust:
-            </p>
-            <p className="brigendsExpanded text-2xl sm:text-3xl md:text-4xl tracking-[0.2em] leading-[1.2]">
-              <span className="block sm:inline">TRUSTED BY</span>{" "}
-              <span className="block sm:inline">LEADING BROKERS</span>{" "}
-              <span className="block sm:inline">ACROSS THE COUNTRY</span>
-            </p>
+          <div className="flex flex-col gap-y-2.5 lg:gap-y-6 mt-15 lg:mt-20 lg:max-w-1/2 mx-auto">
+            <p className="md:text-lg text-center">Industry Trust:</p>
+            <h4 className="brigendsExpanded text-xl sm:text-2xl lg:text-xl 2xl:text-3xl text-center">
+              Trusted by leading brokers across the country
+            </h4>
           </div>
         </div>
       </section>

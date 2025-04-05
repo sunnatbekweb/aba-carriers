@@ -20,8 +20,12 @@ export default function Home() {
               Your belongings are in safe hands
             </h1>
             <div className="flex flex-col gap-y-7 sm:flex-row items-center gap-x-[50px]">
-              <ButtonSecondary text="Get a quote" />
-              <ButtonPrimary text="Drive with us" />
+              <Link href={"/services#get_quote"}>
+                <ButtonSecondary text="Get a quote" />
+              </Link>
+              <Link href={"/drive#form"}>
+                <ButtonPrimary text="Drive with us" />
+              </Link>
             </div>
           </div>
         </div>
@@ -48,7 +52,7 @@ export default function Home() {
               a team of experienced professionals, we provide reliable trucking
               services tailored to your logistics needs
             </p>
-            <Link href={"/why"}>
+            <Link href={"/carriers"}>
               <ButtonPrimary text="Read more" />
             </Link>
           </div>
@@ -62,28 +66,33 @@ export default function Home() {
         className={`${styles.third_section} text-white lg:text-black`}
       >
         <div className="container px-5 flex flex-col items-start lg:items-end">
-          <Image
-            src={"/icons/wheel.svg"}
-            width={60}
-            height={45}
-            className="w-[30] h-[25px] md:w-[50px] md:h-[35px] lg:w-[60] lg:h-[45px]"
-            alt="Wheel icon"
-          />
-          <div className="mt-10 lg:pl-[100px] pb-5 md:pb-[15px] lg:pb-[30px] w-full lg:w-fit border-b-2 border-[#ff0000]">
-            <h2 className="brigendsExpanded text-[28px] lg:text-[45px]">
-              Drive for aba
-            </h2>
+          <div className="lg:w-[45%]">
+            <Image
+              src={"/icons/wheel.svg"}
+              width={60}
+              height={45}
+              className="w-[30] h-[25px] md:w-[50px] md:h-[35px] lg:w-[60] lg:h-[45px] lg:ml-auto"
+              alt="Wheel icon"
+            />
+            <div className="mt-10 lg:ml-auto lg:pl-[100px] pb-5 md:pb-[15px] lg:pb-[30px] w-full lg:w-fit border-b-2 border-[#ff0000]">
+              <h2 className="brigendsExpanded text-[28px] lg:text-[45px] lg:text-right">
+                Drive for aba
+              </h2>
+            </div>
+            <p className="mt-5 mb-10 md:my-10 lg:my-[65px] text-lg lg:text-2xl lg:text-right">
+              Looking for a trucking company that values you? At ABA, we put our
+              drivers first with competitive pay, steady miles, and a supportive
+              team that treats you like family. Whether you&apos;re an owner
+              operator or a company driver we offer the opportunities,
+              resources, and respect you deserve. Join us today and drive your
+              future forward!
+            </p>
+            <div className="flex lg:justify-end">
+              <Link href={"/drive"}>
+                <ButtonPrimary text="Read more" />
+              </Link>
+            </div>
           </div>
-          <p className="mt-5 mb-10 md:my-10 lg:my-[65px] text-lg lg:text-2xl max-w-[656px] lg:text-right">
-            Looking for a trucking company that values you? At ABA, we put our
-            drivers first with competitive pay, steady miles, and a supportive
-            team that treats you like family. Whether you&apos;re an owner operator
-            or a company driver we offer the opportunities, resources, and
-            respect you deserve. Join us today and drive your future forward!
-          </p>
-          <Link href={"/drive"}>
-            <ButtonPrimary text="Read more" />
-          </Link>
         </div>
       </section>
       <BottomGradient />
@@ -139,7 +148,7 @@ export default function Home() {
               className="h-auto sm:h-[400px] lg:h-full w-full object-cover"
               alt="Carriers section image"
             />
-            <AboutSectionGsap/>
+            <AboutSectionGsap />
           </div>
         </div>
         <div className="container px-5">

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import BgImage from "../../../public/images/page_hero/carriers_hero_bg.png";
+import BgImage from "../../../public/images/page_hero/carriers_hero_bg.webp";
 import { PageHero } from "@/components/ui/PageHero";
 import { FeaturedCarousel } from "@/components/ui/FeaturedCarousel";
 import { BottomGradient } from "@/components/ui/BottomGradient";
