@@ -34,13 +34,13 @@ export const NavModal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
       >
         <ul
           className={
-            "flex flex-col items-center gap-y-6 md:gap-y-14 lg:gap-y-[105px] max-w-[725px] mx-auto px-5 lg:px-0"
+            "flex flex-col items-center gap-y-6 md:gap-y-14 lg:gap-y-20 max-w-[725px] mx-auto px-5 lg:px-0"
           }
         >
           <li className={"flex justify-center"}>
             <Link
               href={"/"}
-              className={`text-xl md:text-3xl lg:text-5xl uppercase text-center ${
+              className={`text-xl md:text-3xl lg:text-4xl uppercase text-center ${
                 path === "/" ? "text-[#ff0000]" : "text-white"
               }`}
             >
@@ -50,7 +50,7 @@ export const NavModal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
           <li className={"flex justify-center"}>
             <Link
               href={"/carriers"}
-              className={`text-xl md:text-3xl lg:text-5xl uppercase text-center ${
+              className={`text-xl md:text-3xl lg:text-4xl uppercase text-center ${
                 path === "/carriers" ? "text-[#ff0000]" : "text-white"
               }`}
             >
@@ -60,7 +60,7 @@ export const NavModal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
           <li className={"flex justify-center"}>
             <Link
               href={"/drive"}
-              className={`text-xl md:text-3xl lg:text-5xl uppercase text-center ${
+              className={`text-xl md:text-3xl lg:text-4xl uppercase text-center ${
                 path === "/drive" ? "text-[#ff0000]" : "text-white"
               }`}
             >
@@ -70,7 +70,7 @@ export const NavModal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
           <li className={"flex justify-center"}>
             <Link
               href={"/services"}
-              className={`text-xl md:text-3xl lg:text-5xl uppercase text-center ${
+              className={`text-xl md:text-3xl lg:text-4xl uppercase text-center ${
                 path === "/services" ? "text-[#ff0000]" : "text-white"
               }`}
             >
@@ -80,7 +80,7 @@ export const NavModal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
           <li className={"flex justify-center"}>
             <Link
               href={"/about"}
-              className={`text-xl md:text-3xl lg:text-5xl uppercase text-center ${
+              className={`text-xl md:text-3xl lg:text-4xl uppercase text-center ${
                 path === "/about" ? "text-[#ff0000]" : "text-white"
               }`}
             >
