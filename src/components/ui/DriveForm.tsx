@@ -12,7 +12,6 @@ export const DriveForm = () => {
     email: "",
     phone: "",
   });
-
   const [loading, setLoading] = useState(false);
 
   const handleChange = (
@@ -35,30 +34,23 @@ export const DriveForm = () => {
     };
 
     try {
-      await toast.promise(
-        axios.post(
-          `${process.env.NEXT_PUBLIC_BASE_URL}/pre-quality-form/`,
-          payload,
-          {
-            headers: {
-              "Content-Type": "application/json",
-              Accept: "application/json",
-            },
-          }
-        ),
+      await axios.post(
+        `${process.env.NEXT_PUBLIC_BASE_URL}/pre-quality-form/`,
+        payload,
         {
-          pending: "Submitting your form...",
-          success: "Form submitted successfully! 🎉",
-          error: "Error submitting form. Please try again. ❌",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
         }
       );
-
       setFormData({
         fullName: "",
         cityState: "",
         email: "",
         phone: "",
       });
+      toast.success("Form submitted successfully! 🎉");
     } catch (error) {
       console.error("Error submitting form:", error);
       toast.error("Failed to submit the form.");
@@ -87,7 +79,6 @@ export const DriveForm = () => {
           required
         />
       </label>
-
       <label htmlFor="cityState" className="flex flex-col gap-y-2.5">
         <span className="text-base lg:text-lg text-[#FF0000] tracking-[0.08em]">
           City | State
@@ -103,7 +94,6 @@ export const DriveForm = () => {
           required
         />
       </label>
-
       <label htmlFor="email" className="flex flex-col gap-y-2.5">
         <span className="text-base lg:text-lg text-[#FF0000] tracking-[0.08em]">
           Your Email
@@ -119,7 +109,6 @@ export const DriveForm = () => {
           required
         />
       </label>
-
       <label htmlFor="phone" className="flex flex-col gap-y-2.5">
         <span className="text-base lg:text-lg text-[#FF0000] tracking-[0.08em]">
           Your Phone
@@ -135,7 +124,6 @@ export const DriveForm = () => {
           required
         />
       </label>
-
       <ToastContainer />
       <button
         type="submit"

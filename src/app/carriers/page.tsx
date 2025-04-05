@@ -1,12 +1,33 @@
+"use client";
+
 import Image from "next/image";
 import BgImage from "../../../public/images/page_hero/carriers_hero_bg.png";
 import { PageHero } from "@/components/ui/PageHero";
 import { FeaturedCarousel } from "@/components/ui/FeaturedCarousel";
 import { BottomGradient } from "@/components/ui/BottomGradient";
-import { Carriers_logo } from "@/data/Carriers";
 import styles from "@/styles/carriers.module.css";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import { Feedbacks } from "@/types";
 
 export default function Carriers() {
+  const [feedbacks, setFeedbacks] = useState<Feedbacks>();
+
+  useEffect(() => {
+    getFeedbacks();
+  }, []);
+
+  const getFeedbacks = async () => {
+    try {
+      axios
+        .get(`${process.env.NEXT_PUBLIC_BASE_URL}/feedback/`)
+        .then((response) => setFeedbacks(response.data));
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  console.log(feedbacks);
   return (
     <>
       <PageHero url={BgImage.src} title={"Why ABA Carriers"} />
@@ -92,33 +113,41 @@ export default function Carriers() {
       <section className="py-[50px] lg:py-[65px] xl:py-[80px]">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-5 gap-x-6">
-            {Carriers_logo.map((_, index) => (
-              <div className="h-full flex flex-col justify-between" key={index}>
+            {feedbacks?.map((item) => (
+              <div
+                className="h-full flex flex-col justify-between"
+                key={item?.id}
+              >
                 <div>
                   <div
                     className={`${styles.logo} w-full h-[140px] lg:h-[180px] xl:h-[210px] p-5 flex justify-center items-center`}
                   >
-                    <_.logo />
+                    <Image
+                      src={item?.icon}
+                      width={500}
+                      height={200}
+                      alt={item?.username}
+                    />
                   </div>
                   <div
                     className="w-full h-[25px]"
-                    style={{ backgroundColor: _.color }}
+                    style={{ backgroundColor: item?.color }}
                   ></div>
                   <div className="px-6 py-5 lg:px-7 xl:px-[50px] lg:py-[30px]">
                     <h4
                       className="brigendsExpanded text-3xl xl:text-4xl tracking-[0.08em] text-center"
-                      style={{ color: _.color }}
+                      style={{ color: item?.color }}
                     >
-                      {_.title}
+                      {item?.username}
                     </h4>
                     <p className="text-base lg:text-lg xl:text-xl tracking-[0.08em] text-center mt-5 lg:mt-[30px]">
-                      {_.description}
+                      {item?.text}
                     </p>
                   </div>
                 </div>
                 <div
                   className="w-full h-[25px] mt-auto"
-                  style={{ backgroundColor: _.color }}
+                  style={{ backgroundColor: item?.color }}
                 ></div>
               </div>
             ))}
