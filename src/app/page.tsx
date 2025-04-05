@@ -6,6 +6,8 @@ import styles from "@/styles/homepage.module.css";
 import Link from "next/link";
 import { TruckImages } from "@/components/ui/TruckImages";
 import { BottomGradient } from "@/components/ui/BottomGradient";
+import { ServiceSectionGsap } from "@/components/ui/ServiceSectionGsap";
+import { AboutSectionGsap } from "@/components/ui/AboutSectionGsap";
 
 export default function Home() {
   return (
@@ -75,7 +77,7 @@ export default function Home() {
           <p className="mt-5 mb-10 md:my-10 lg:my-[65px] text-lg lg:text-2xl max-w-[656px] lg:text-right">
             Looking for a trucking company that values you? At ABA, we put our
             drivers first with competitive pay, steady miles, and a supportive
-            team that treats you like family. Whether you're an owner operator
+            team that treats you like family. Whether you&apos;re an owner operator
             or a company driver we offer the opportunities, resources, and
             respect you deserve. Join us today and drive your future forward!
           </p>
@@ -120,13 +122,7 @@ export default function Home() {
             height={1000}
             alt="Section side image"
           />
-          <Image
-            src={"/images/American-Truck.png"}
-            width={1080}
-            height={834}
-            className="absolute top-[60px] md:top-[120px] -right-6 md:-right-12"
-            alt="Section side image"
-          />
+          <ServiceSectionGsap />
         </div>
       </section>
       <BottomGradient />
@@ -135,13 +131,16 @@ export default function Home() {
         className={`${styles.carriers} pb-[60px] lg:py-[125px]`}
       >
         <div className="w-full lg:absolute top-0 lg:w-1/2 h-full mb-6">
-          <Image
-            src={"/images/carriers_image.png"}
-            width={960}
-            height={1020}
-            className="h-auto sm:h-[400px] lg:h-full w-full object-cover"
-            alt="Carriers section image"
-          />
+          <div className="relative -z-10 h-full">
+            <Image
+              src={"/images/carriers_image.png"}
+              width={960}
+              height={1020}
+              className="h-auto sm:h-[400px] lg:h-full w-full object-cover"
+              alt="Carriers section image"
+            />
+            <AboutSectionGsap/>
+          </div>
         </div>
         <div className="container px-5">
           <div className="lg:w-1/2 flex flex-col items-end ml-auto pl-5">

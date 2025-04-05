@@ -10,14 +10,13 @@ gsap.registerPlugin(ScrollTrigger);
 export function TruckImages() {
   const imagesRef = useRef<(HTMLImageElement | null)[]>([]);
   const offsets = [350, 175, 0];
-  const prevOffsets = [700, 350, 175];
 
   useEffect(() => {
     imagesRef.current.forEach((img, index) => {
       if (img) {
         gsap.fromTo(
           img,
-          { opacity: 0, x: prevOffsets[index] },
+          { opacity: 1, x: 960 },
           {
             opacity: 1,
             x: offsets[index],
