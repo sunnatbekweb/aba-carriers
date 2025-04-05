@@ -7,7 +7,7 @@ export const Footer = () => {
   return (
     <footer className={`${styles.footer} py-10 relative`}>
       <div className="container">
-        <div className="pl-[30px]">
+        <div className="lg:pl-[64px]">
           <div className="w-fit absolute left-1/2 -translate-x-1/2 top-[10px] md:left-[25px] md:translate-x-0 md:top-[10px] lg:top-10 lg:left-[115px]">
             <Image
               src={"/icons/footer_icons/Logo_red.svg"}
@@ -31,7 +31,7 @@ export const Footer = () => {
                 <h5 className="text-lg text-center md:text-left text-white font-bold leading-[200%] border-b border-[#ff0000] pb-1 mb-2.5">
                   - Contact email
                 </h5>
-                <ul className="flex flex-col gap-y-1.5">
+                <ul className={`${styles.footer_list} flex flex-col gap-y-1.5`}>
                   <li className="flex flex-col">
                     <Link
                       href={"mailto:Hiring@abacarriers.com"}
@@ -88,7 +88,7 @@ export const Footer = () => {
                 <h5 className="text-lg text-center md:text-left text-white font-bold leading-[200%] border-b border-[#ff0000] pb-1 mb-2.5">
                   - Contact address
                 </h5>
-                <ul className="flex flex-col gap-y-1.5">
+                <ul className={`${styles.footer_list} flex flex-col gap-y-1.5`}>
                   <li className="flex flex-col text-center md:text-left">
                     4764 Fishburg Rd, Suite D2 <br />
                     Huber Heights, OH 45424 ( Official address )
@@ -111,7 +111,7 @@ export const Footer = () => {
                 <h5 className="text-lg text-center md:text-left text-white font-bold leading-[200%] border-b border-[#ff0000] pb-1 mb-2.5">
                   - Contact email
                 </h5>
-                <ul className="flex flex-col gap-y-1.5">
+                <ul className={`${styles.footer_list} flex flex-col gap-y-1.5`}>
                   <li className="flex flex-col">
                     <Link
                       href={"tel:+12404498888"}

@@ -9,11 +9,28 @@
   background-size: cover;
 }
 
+
+
 @media screen and (min-width: 768px) {
   .footer {
     background-image: url(../../public/icons/footer_icons/footer_bg_tablet.svg);
     background-repeat: no-repeat;
     background-position: -5px 0;
+  }
+
+  .footer_list {
+    position: relative;
+    padding-left: 16px;
+  
+    &::before {
+      content: "";
+      width: 1px;
+      height: 100%;
+      background: #ff0000;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
 }
 
