@@ -27,7 +27,6 @@ export default function Carriers() {
     }
   };
 
-  console.log(feedbacks);
   return (
     <>
       <PageHero url={BgImage.src} title={"Why ABA Carriers"} />
