@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { WatsApp } from "../../../../public/icons/header_icons/WatsApp";
+import { WhatsApp } from "../../../../public/icons/header_icons/WatsApp";
 import { Facebook } from "../../../../public/icons/header_icons/Facebook";
 import { Phone } from "../../../../public/icons/header_icons/Phone";
 import { Menu } from "../../../../public/icons/header_icons/Menu";
@@ -46,10 +46,10 @@ export const Header = () => {
         </div>
         <div className="container px-5 flex justify-end">
           <div className="flex items-center gap-x-5 md:gap-x-10">
-            <Link href={"#"} className={`${styles.icon}`}>
-              <WatsApp />
+            <Link href={"#"} aria-label="WhatsApp profile" className={`${styles.icon}`}>
+              <WhatsApp />
             </Link>
-            <Link href={"#"} className={`${styles.icon}`}>
+            <Link href={"#"} aria-label="Facebook porfile" className={`${styles.icon}`}>
               <Facebook />
             </Link>
             <button

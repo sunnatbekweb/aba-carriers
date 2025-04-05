@@ -1,6 +1,6 @@
 import React from "react";
 
-export const WatsApp = () => {
+export const WhatsApp = () => {
   return (
     <svg
       width="30"

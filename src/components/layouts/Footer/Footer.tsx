@@ -28,9 +28,9 @@ export const Footer = () => {
                 alt="Email icon"
               />
               <div className="flex flex-col">
-                <h5 className="text-lg text-center md:text-left text-white font-bold leading-[200%] border-b border-[#ff0000] pb-1 mb-2.5">
+                <h3 className="text-lg text-center md:text-left text-white font-bold leading-[200%] border-b border-[#ff0000] pb-1 mb-2.5">
                   - Contact email
-                </h5>
+                </h3>
                 <ul className={`${styles.footer_list} flex flex-col gap-y-1.5`}>
                   <li className="flex flex-col">
                     <Link
@@ -85,9 +85,9 @@ export const Footer = () => {
                 alt="Email icon"
               />
               <div className="flex flex-col">
-                <h5 className="text-lg text-center md:text-left text-white font-bold leading-[200%] border-b border-[#ff0000] pb-1 mb-2.5">
+                <h4 className="text-lg text-center md:text-left text-white font-bold leading-[200%] border-b border-[#ff0000] pb-1 mb-2.5">
                   - Contact address
-                </h5>
+                </h4>
                 <ul className={`${styles.footer_list} flex flex-col gap-y-1.5`}>
                   <li className="flex flex-col text-center md:text-left">
                     4764 Fishburg Rd, Suite D2 <br />

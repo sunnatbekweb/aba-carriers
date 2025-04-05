@@ -52,7 +52,7 @@ export default function Home() {
               a team of experienced professionals, we provide reliable trucking
               services tailored to your logistics needs
             </p>
-            <Link href={"/carriers"}>
+            <Link href={"/carriers"} aria-label="Link to carriers page">
               <ButtonPrimary text="Read more" />
             </Link>
           </div>
@@ -88,7 +88,7 @@ export default function Home() {
               future forward!
             </p>
             <div className="flex lg:justify-end">
-              <Link href={"/drive"}>
+              <Link href={"/drive"} aria-label="Link to drive page">
                 <ButtonPrimary text="Read more" />
               </Link>
             </div>
@@ -119,7 +119,7 @@ export default function Home() {
                 secure, efficient and on-time delicate shipments
               </li>
             </ol>
-            <Link href={"/services"}>
+            <Link href={"/services"} aria-label="Link to services page">
               <ButtonPrimary text="Read more" />
             </Link>
           </div>
@@ -172,7 +172,7 @@ export default function Home() {
               efficient transportation. With 200+ satisfied clients, we are
               committed to excellence in every shipment
             </p>
-            <Link href={"/about"}>
+            <Link href={"/about"} aria-label="Link to about page">
               <ButtonPrimary text="Read more" />
             </Link>
           </div>
