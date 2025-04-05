@@ -126,6 +126,7 @@ export default function Carriers() {
                       src={item?.icon}
                       width={500}
                       height={200}
+                      className="w-full h-[140px] lg:h-[180px] xl:h-[200px] object-contain"
                       alt={item?.username}
                     />
                   </div>
