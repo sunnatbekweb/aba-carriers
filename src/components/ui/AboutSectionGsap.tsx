@@ -2,22 +2,26 @@
 
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 
+gsap.registerPlugin(ScrollTrigger);
+
 export const AboutSectionGsap = () => {
-  const imageRef = useRef<HTMLImageElement | null>(null);
+  const wrapperRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    if (imageRef.current) {
+    if (wrapperRef.current) {
       gsap.fromTo(
-        imageRef.current,
-        { opacity: 0, scale: 0.5 },
+        wrapperRef.current,
+        { opacity: 0, scale: 0.5, x: 0 },
         {
           opacity: 1,
           scale: 1,
+          x: 0,
           ease: "power2.out",
-          ScrollTrigger: {
-            trigger: imageRef.current,
+          scrollTrigger: {
+            trigger: wrapperRef.current,
             start: "top 90%",
             end: "top 30%",
             scrub: true,
@@ -28,13 +32,17 @@ export const AboutSectionGsap = () => {
   }, []);
 
   return (
-    <Image
-      src={"/icons/about_logo.svg"}
-      width={640}
-      height={380}
-      ref={imageRef}
+    <div
+      ref={wrapperRef}
       className="w-[220px] h-auto md:w-[310px] xl:w-[640px] absolute top-[50%] left-[50%] -translate-1/2 z-20"
-      alt="Carriers section image"
-    />
+    >
+      <Image
+        src={"/icons/about_logo.svg"}
+        width={640}
+        height={380}
+        alt="Carriers section image"
+        className="w-full h-auto"
+      />
+    </div>
   );
 };
