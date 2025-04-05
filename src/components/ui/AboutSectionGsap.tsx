@@ -14,11 +14,10 @@ export const AboutSectionGsap = () => {
     if (wrapperRef.current) {
       gsap.fromTo(
         wrapperRef.current,
-        { opacity: 0, scale: 0.5, x: 0 },
+        { opacity: 0, scale: 0.5 },
         {
           opacity: 1,
           scale: 1,
-          x: 0,
           ease: "power2.out",
           scrollTrigger: {
             trigger: wrapperRef.current,
