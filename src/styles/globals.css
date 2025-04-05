@@ -172,18 +172,18 @@ button {
 @media screen and (min-width: 768px) {
   .contact_modal {
     @apply relative px-5;
-  
+
     &::after {
       @apply block absolute top-[35%] w-full h-0.5 bg-red-500;
       content: "";
     }
-  
+
     &::before {
       @apply block absolute bottom-[35%] w-full h-0.5 bg-red-500;
       content: "";
     }
   }
-  
+
   .swiper-slide {
     width: 30% !important;
   }

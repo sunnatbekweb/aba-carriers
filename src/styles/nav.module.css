@@ -1,19 +1,9 @@
-.nav {
-  & ul {
-    & li {
-      & a {
-        & svg {
-          & path {
-            transition: fill 0.3s ease-in-out;
-          }
+.nav ul li a svg path {
+  transition: fill 0.3s ease-in-out;
+}
 
-          &:hover {
-            & path {
-              fill: #ff0000;
-            }
-          }
-        }
-      }
-    }
+.nav ul li a:hover {
+  & path {
+    fill: #ff0000;
   }
 }
