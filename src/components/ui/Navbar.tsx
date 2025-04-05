@@ -69,22 +69,6 @@ export const Navbar = () => {
           </li>
           <li>
             <Link
-              href="#about"
-              className={activeSection === "about" ? "nav_link-active" : ""}
-            >
-              <NavIcon2 />
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="#services"
-              className={activeSection === "services" ? "nav_link-active" : ""}
-            >
-              <NavIcon3 />
-            </Link>
-          </li>
-          <li>
-            <Link
               href="#carriers"
               className={activeSection === "carriers" ? "nav_link-active" : ""}
             >
@@ -97,6 +81,22 @@ export const Navbar = () => {
               className={activeSection === "drive" ? "nav_link-active" : ""}
             >
               <NavIcon5 />
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="#services"
+              className={activeSection === "services" ? "nav_link-active" : ""}
+            >
+              <NavIcon3 />
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="#about"
+              className={activeSection === "about" ? "nav_link-active" : ""}
+            >
+              <NavIcon2 />
             </Link>
           </li>
         </ul>
