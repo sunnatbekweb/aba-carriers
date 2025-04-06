@@ -1,8 +1,5 @@
 .intro {
-  background-image: url(../../public/images/page_hero/homepage_hero.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  position: relative;
   height: 100vh;
   display: flex;
   flex-direction: column;

@@ -47,7 +47,7 @@ export const Navbar = () => {
         } w-[74px] h-[74px] rounded-full fixed top-[33%] z-20 -left-[36px] bg-[#202020] flex items-center justify-end pr-1.5`}
       >
         <Image
-          src={"/icons/nav_open.svg"}
+          src={"/icons/nav_icons/nav_open.svg"}
           width={25}
           height={25}
           alt={"Nav button icon"}

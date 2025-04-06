@@ -2,7 +2,7 @@
 
 import { PageHero } from "@/components/ui/PageHero";
 import BgImage from "../../../public/images/page_hero/services_hero_bg.webp";
-import { QuoteForm } from "@/components/ui/QuoteForm";
+import { QuoteForm } from "@/components/ui/form/QuoteForm";
 import { ToastContainer } from "react-toastify";
 
 export default function Services() {

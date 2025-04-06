@@ -2,7 +2,7 @@ import { PageHero } from "@/components/ui/PageHero";
 import BgImage from "../../../public/images/page_hero/drive_hero.webp";
 import Image from "next/image";
 import { BottomGradient } from "@/components/ui/BottomGradient";
-import { DriveForm } from "@/components/ui/DriveForm";
+import { DriveForm } from "@/components/ui/form/DriveForm";
 
 export default function Drive() {
   return (

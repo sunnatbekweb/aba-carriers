@@ -1,19 +1,27 @@
 import Image from "next/image";
-import { ButtonPrimary } from "@/components/ui/ButtonPrimary";
-import { ButtonSecondary } from "@/components/ui/ButtonSecondary";
-import { Navbar } from "@/components/ui/Navbar";
-import styles from "@/styles/homepage.module.css";
 import Link from "next/link";
+import { Navbar } from "@/components/ui/Navbar";
+import { ButtonPrimary } from "@/components/ui/buttons/ButtonPrimary";
+import { ButtonSecondary } from "@/components/ui/buttons/ButtonSecondary";
 import { TruckImages } from "@/components/ui/TruckImages";
 import { BottomGradient } from "@/components/ui/BottomGradient";
-import { ServiceSectionGsap } from "@/components/ui/ServiceSectionGsap";
-import { AboutSectionGsap } from "@/components/ui/AboutSectionGsap";
+import { ServiceSectionGsap } from "@/components/ui/animation/ServiceSectionGsap";
+import { AboutSectionGsap } from "@/components/ui/animation/AboutSectionGsap";
+import styles from "@/styles/homepage.module.css";
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <section className={`${styles.intro}`}>
+        <Image
+          src={"/images/page_hero/homepage_hero.webp"}
+          width={1920}
+          height={1080}
+          loading="lazy"
+          className="absolute top-0 left-0 w-full h-full -z-10 object-cover"
+          alt="Hero background image"
+        />
         <div className="container px-5 flex justify-center">
           <div className="max-w-[520px] lg:max-w-[795px] flex flex-col items-center">
             <h1 className="brigendsExpanded text-[30px] md:text-[35px] lg:text-[50px] text-white text-center mb-7 lg:mb-14">

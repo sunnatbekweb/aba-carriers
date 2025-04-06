@@ -8,13 +8,15 @@ export interface HeroProps {
   title: string;
 }
 
-export type Feedbacks = Array<{
+export type FeedbackItem = {
   id: number;
   color: string;
   icon: string;
   text: string;
   username: string;
-}>;
+};
+
+export type Feedbacks = FeedbackItem[];
 
 export type Equipment = Array<{
   id: number;
