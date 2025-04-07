@@ -10,7 +10,7 @@ import { NavIcon4 } from "../../../public/icons/nav_icons/NavIcon4";
 import { NavIcon5 } from "../../../public/icons/nav_icons/NavIcon5";
 import styles from "@/styles/nav.module.css";
 
-export const Navbar = () => {
+export const HomeNavbar = () => {
   const [navOpen, setNavOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("");
 
@@ -44,7 +44,7 @@ export const Navbar = () => {
         onClick={() => setNavOpen(true)}
         className={`${
           navOpen ? "opacity-0 collapse" : "opacity-100 visible"
-        } w-[74px] h-[74px] rounded-full fixed top-[33%] z-20 -left-[36px] bg-[#202020] flex items-center justify-end pr-1.5`}
+        } w-[74px] h-[74px] rounded-full fixed top-[33%] z-0 -left-[36px] bg-[#202020] flex items-center justify-end pr-1.5`}
       >
         <Image
           src={"/icons/nav_icons/nav_open.svg"}

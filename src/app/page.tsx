@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Navbar } from "@/components/ui/Navbar";
+import { HomeNavbar } from "@/components/ui/HomeNavbar";
 import { ButtonPrimary } from "@/components/ui/buttons/ButtonPrimary";
 import { ButtonSecondary } from "@/components/ui/buttons/ButtonSecondary";
 import { TruckImages } from "@/components/ui/TruckImages";
@@ -12,7 +12,7 @@ import styles from "@/styles/homepage.module.css";
 export default function Home() {
   return (
     <>
-      <Navbar />
+      <HomeNavbar />
       <section className={`${styles.intro}`}>
         <Image
           src={"/images/page_hero/homepage_hero.webp"}

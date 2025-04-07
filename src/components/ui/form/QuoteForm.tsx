@@ -112,7 +112,7 @@ export const QuoteForm = () => {
               type={type}
               name={name}
               placeholder={`Enter your ${label.toLowerCase()}`}
-              className="w-full px-4 py-2.5 border border-gray-300 rounded-sm focus:ring-1 focus:ring-red-500"
+              className="w-full px-4 py-2.5 border border-gray-300 rounded-sm focus:outline-2 outline-red-500"
               value={formData[name as keyof typeof formData]}
               onChange={handleChange}
               required
@@ -129,7 +129,7 @@ export const QuoteForm = () => {
             type="text"
             name="company"
             placeholder="Enter your Company"
-            className="w-full px-4 py-2.5 border border-gray-300 rounded-sm focus:ring-1 focus:ring-red-500"
+            className="w-full px-4 py-2.5 border border-gray-300 rounded-sm focus:outline-2 outline-red-500"
             value={formData.company}
             onChange={handleChange}
             required
@@ -141,7 +141,7 @@ export const QuoteForm = () => {
           </label>
           <select
             name="equipment"
-            className="w-full px-4 py-2.5 border border-gray-300 rounded-sm focus:ring-1 focus:ring-red-500 bg-white"
+            className="w-full px-4 py-2.5 border border-gray-300 rounded-sm focus:outline-2 outline-red-500 bg-white"
             value={formData.equipment}
             onChange={handleChange}
           >
@@ -163,7 +163,7 @@ export const QuoteForm = () => {
             type="text"
             name="trailer_type"
             placeholder="Enter Trailer Type"
-            className="w-full px-4 py-2.5 border border-gray-300 rounded-sm focus:ring-1 focus:ring-red-500"
+            className="w-full px-4 py-2.5 border border-gray-300 rounded-sm focus:outline-2 outline-red-500"
             value={formData.trailer_type}
             onChange={handleChange}
             required
@@ -184,7 +184,7 @@ export const QuoteForm = () => {
               type="text"
               name={name}
               placeholder={`Enter ${label}`}
-              className="w-full px-4 py-2.5 border border-gray-300 rounded-sm focus:ring-1 focus:ring-red-500"
+              className="w-full px-4 py-2.5 border border-gray-300 rounded-sm focus:outline-2 outline-red-500"
               value={formData[name as keyof typeof formData]}
               onChange={handleChange}
               required
@@ -214,7 +214,7 @@ export const QuoteForm = () => {
             <input
               type={type}
               name={name}
-              className="w-full px-4 py-2.5 border border-gray-300 rounded-sm focus:ring-1 focus:ring-red-500"
+              className="w-full px-4 py-2.5 border border-gray-300 rounded-sm focus:outline-2 outline-red-500"
               value={formData[name as keyof typeof formData]}
               onChange={handleChange}
               required

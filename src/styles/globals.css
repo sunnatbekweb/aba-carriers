@@ -35,7 +35,7 @@ button {
 
 /* ========== NAVIGATION MODAL ========== */
 .nav_modal {
-  @apply fixed top-0 left-0 w-full h-screen z-30 transition-all duration-300;
+  @apply fixed top-0 left-0 w-full h-screen z-10 transition-all duration-300;
   background-image: url("/images/nav_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -47,7 +47,7 @@ button {
 
 /* ========== CONTACT MODAL ========== */
 .contact_modal {
-  @apply relative px-5;
+  @apply relative px-5 z-10;
 
   &::after {
     @apply hidden;

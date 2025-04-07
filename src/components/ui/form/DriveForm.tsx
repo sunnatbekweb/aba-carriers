@@ -72,7 +72,7 @@ export const DriveForm = () => {
           type="text"
           name="fullName"
           id="fullName"
-          className="p-4 bg-white placeholder:text-[#828282] rounded-lg"
+          className="p-4 bg-white placeholder:text-[#828282] rounded-lg focus:outline-2 outline-red-500"
           placeholder="Enter your name"
           value={formData.fullName}
           onChange={handleChange}
@@ -87,7 +87,7 @@ export const DriveForm = () => {
           type="text"
           name="cityState"
           id="cityState"
-          className="p-4 bg-white placeholder:text-[#828282] rounded-lg"
+          className="p-4 bg-white placeholder:text-[#828282] rounded-lg focus:outline-2 outline-red-500"
           placeholder="Enter your city or state"
           value={formData.cityState}
           onChange={handleChange}
@@ -102,7 +102,7 @@ export const DriveForm = () => {
           type="email"
           name="email"
           id="email"
-          className="p-4 bg-white placeholder:text-[#828282] rounded-lg"
+          className="p-4 bg-white placeholder:text-[#828282] rounded-lg focus:outline-2 outline-red-500"
           placeholder="Enter your email"
           value={formData.email}
           onChange={handleChange}
@@ -117,7 +117,7 @@ export const DriveForm = () => {
           type="tel"
           name="phone"
           id="phone"
-          className="p-4 bg-white placeholder:text-[#828282] rounded-lg"
+          className="p-4 bg-white placeholder:text-[#828282] rounded-lg focus:outline-2 outline-red-500"
           placeholder="Enter your phone"
           value={formData.phone}
           onChange={handleChange}

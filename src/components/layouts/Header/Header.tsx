@@ -8,8 +8,8 @@ import { Facebook } from "../../../../public/icons/header_icons/Facebook";
 import { Phone } from "../../../../public/icons/header_icons/Phone";
 import { Menu } from "../../../../public/icons/header_icons/Menu";
 import { NavModal } from "@/components/ui/modal/NavModal";
-import styles from "@/styles/header.module.css";
 import { ContactModal } from "@/components/ui/modal/ContactModal";
+import styles from "@/styles/header.module.css";
 
 export const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
