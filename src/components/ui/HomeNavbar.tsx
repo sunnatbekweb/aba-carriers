@@ -40,12 +40,11 @@ export const HomeNavbar = () => {
 
   return (
     <>
-      {/* Кнопка открытия только для мобильных */}
       <button
         onClick={() => setNavOpen(true)}
         className={`lg:hidden ${
           navOpen ? "opacity-0 collapse" : "opacity-100 visible"
-        } w-[64px] h-[64px] rounded-full fixed top-[33%] z-0 -left-[36px] bg-[#202020] flex items-center justify-end pr-1.5`}
+        } w-[64px] h-[64px] rounded-full fixed top-[33%] z-[1] -left-[36px] bg-[#202020] flex items-center justify-end pr-1.5`}
       >
         <Image
           src={"/icons/nav_icons/nav_open.svg"}
