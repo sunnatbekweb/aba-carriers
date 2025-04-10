@@ -116,7 +116,7 @@ export default function Home() {
           <h2 className="brigendsExpanded text-2xl md:text-[28px] lg:text-[36px] border-b-2 border-[#ff0000] w-fit mt-10 pb-3">
             ABA SERVICES
           </h2>
-          <ol className="flex flex-col w-full lg:w-1/2 gap-y-[60px] my-[65px] list-decimal">
+          <ol className={`${styles.ordered_list} flex flex-col w-full lg:w-1/2 gap-y-[60px] my-[65px] list-decimal`}>
             <li className="text-sm md:text-base lg:text-lg">
               Team Transit Shipments: Focused on expedited team transit to
               provide time-sensitive transportation solutions
