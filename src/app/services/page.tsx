@@ -1,5 +1,3 @@
-"use client";
-
 import { PageHero } from "@/components/ui/PageHero";
 import BgImage from "../../../public/images/page_hero/services_hero_bg.webp";
 import { QuoteForm } from "@/components/ui/form/QuoteForm";
@@ -10,7 +8,6 @@ export default function Services() {
     <>
       <PageHero url={BgImage.src} title={"ABA SERVICES"} />
       <ToastContainer />
-
       <section className="py-12 bg-black text-white md:bg-white md:text-black">
         <div className="container px-5">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 xl:gap-20 items-start">
@@ -27,7 +24,6 @@ export default function Services() {
                 your needs.
               </p>
             </div>
-
             <div>
               <p className="text-white tracking-wider text-sm md:text-base lg:text-lg mb-6 md:mb-10 leading-relaxed md:text-gray-700">
                 When you choose ABA, you get the advantage of team driver

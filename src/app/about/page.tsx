@@ -9,7 +9,6 @@ export default function About() {
         <h2 className="brigendsExpanded mt-12 text-2xl md:text-[28px] lg:text-[36px] uppercase leading-[1.1] tracking-widest text-center whitespace-pre-line">
           ABOUT ABA <br /> CARRIERS INC
         </h2>
-
         <div className="w-[90%] sm:w-[80%] md:w-[696px] border-t-2 border-red-500 mx-auto mt-5"></div>
         <p
           className="mx-auto text-[14px] lg:text-[19px] text-black leading-relaxed text-center px-4 mt-12 

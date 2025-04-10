@@ -1,3 +1,5 @@
+"use client";
+
 import { Equipment } from "@/types";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
