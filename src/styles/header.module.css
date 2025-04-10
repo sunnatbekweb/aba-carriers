@@ -41,12 +41,3 @@
     }
   }
 }
-
-@media screen and (min-width: 1024px) {
-  .icon {
-    & svg {
-      width: 30px;
-      height: 30px;
-    }
-  }
-}

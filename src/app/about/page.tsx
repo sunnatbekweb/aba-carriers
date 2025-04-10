@@ -6,11 +6,11 @@ export default function About() {
     <>
       <PageHero url={BgImage.src} title={"ABOUT ABA"} />
       <section className="container mx-auto px-5 py-12 text-center">
-        <h2 className="brigendsExpanded mt-12 text-[20px] sm:text-[35px] lg:text-[50px] uppercase leading-[1.1] tracking-widest text-center whitespace-pre-line">
+        <h2 className="brigendsExpanded mt-12 text-2xl md:text-[28px] lg:text-[36px] uppercase leading-[1.1] tracking-widest text-center whitespace-pre-line">
           ABOUT ABA <br /> CARRIERS INC
         </h2>
 
-        <div className="w-[90%] sm:w-[80%] md:w-[696px] border-t-2 border-red-500 mx-auto mt-10"></div>
+        <div className="w-[90%] sm:w-[80%] md:w-[696px] border-t-2 border-red-500 mx-auto mt-5"></div>
         <p
           className="mx-auto text-[14px] lg:text-[19px] text-black leading-relaxed text-center px-4 mt-12 
               max-w-[300px] sm:max-w-[900px] lg:max-w-[1400px] tracking-widest"

@@ -24,12 +24,12 @@ export const FeedbackCard: React.FC<{ item: FeedbackItem }> = ({ item }) => {
         ></div>
         <div className="px-6 py-5 lg:px-7 xl:px-[50px] lg:py-[30px]">
           <h4
-            className="brigendsExpanded text-3xl xl:text-4xl tracking-[0.08em] text-center"
+            className="brigendsExpanded text-xl xl:text-2xl tracking-[0.08em] text-center"
             style={{ color: item?.color }}
           >
             {item?.username}
           </h4>
-          <p className="text-base lg:text-lg xl:text-xl tracking-[0.08em] text-center mt-5 lg:mt-[30px]">
+          <p className="text-sm md:text-base tracking-[0.08em] text-center mt-5 lg:mt-[30px]">
             {item?.text}
           </p>
         </div>

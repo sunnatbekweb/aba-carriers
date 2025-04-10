@@ -3,8 +3,8 @@ import React from "react";
 export const NavIcon4 = () => {
   return (
     <svg
-      width="30"
-      height="21"
+      width="24"
+      height="20"
       viewBox="0 0 30 21"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

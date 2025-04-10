@@ -11,10 +11,10 @@ export default function Drive() {
       <section className="py-[50px] lg:py-[105px] xl:py-[180px] relative">
         <div className="container px-5 text-white lg:text-black">
           <div className="w-full lg:w-1/2 flex flex-col gap-y-5 lg:gap-y-10 xl:gap-y-[65px] lg:pr-16 xl:pr-[120px]">
-            <h2 className="brigendsExpanded text-[24px] lg:text-4xl xl:text-[40px] tracking-[0.08em] uppercase border-b-2 border-[#ff0000] pb-5 lg:pb-[15px] xl:pb-[30px]">
+            <h2 className="brigendsExpanded text-xl sm:text-2xl md:text-[28px] lg:text-[36px] tracking-[0.08em] uppercase border-b-2 border-[#ff0000] pb-5">
               Your road to success starts here
             </h2>
-            <p className="text-base lg:text-lg xl:text-2xl tracking-[0.08em]">
+            <p className="text-sm md:text-base lg:text-lg tracking-[0.08em]">
               At ABA, we are committed to providing stable income and excellent
               working conditions for both owner-operators and company drivers.
               As we expand to meet the growing demand for freight transportation
@@ -38,10 +38,10 @@ export default function Drive() {
         <div className="container px-5 flex flex-col gap-y-10">
           <div className="flex flex-col xl:flex-row-reverse items-center gap-x-12 gap-y-10">
             <div className="md:w-[60%] xl:w-1/2 ml-auto">
-              <h2 className="brigendsExpanded text-[24px] lg:text-4xl xl:text-[40px] tracking-[0.08em] md:text-right uppercase border-b-2 border-[#ff0000] pb-5 lg:pb-[15px] xl:pb-[30px]">
+              <h2 className="brigendsExpanded text-xl sm:text-2xl md:text-[28px] lg:text-[36px] tracking-[0.08em] md:text-right uppercase border-b-2 border-[#ff0000] pb-5">
                 Join Our Team as an company driver
               </h2>
-              <p className="text-base lg:text-lg xl:text-2xl tracking-[0.08em] md:text-right mt-5 lg:mt-10 xl:mt-[65px]">
+              <p className="text-sm md:text-base lg:text-lg tracking-[0.08em] md:text-right mt-5 lg:mt-10 xl:mt-[65px]">
                 We value our drivers and offer excellent career growth
                 opportunities. Join our team and enjoy the freedom of the open
                 road while building a rewarding career with competitive pay and
@@ -76,10 +76,10 @@ export default function Drive() {
           </div>
           <div className="flex flex-col xl:flex-row xl:items-center gap-x-12 gap-y-10">
             <div className="md:w-[60%] xl:w-1/2">
-              <h2 className="brigendsExpanded text-[24px] lg:text-4xl xl:text-[40px] tracking-[0.08em] uppercase border-b-2 border-[#ff0000] pb-5 lg:pb-[15px] xl:pb-[30px]">
+              <h2 className="brigendsExpanded text-xl sm:text-2xl md:text-[28px] lg:text-[36px] tracking-[0.08em] uppercase border-b-2 border-[#ff0000] pb-5">
                 Join Our Team as an Owner-Operator
               </h2>
-              <p className="text-base lg:text-lg xl:text-2xl tracking-[0.08em] mt-5 lg:mt-10 xl:mt-[65px]">
+              <p className="text-sm md:text-base lg:text-lg tracking-[0.08em] mt-5 lg:mt-10 xl:mt-[65px]">
                 We value our drivers and offer excellent career growth
                 opportunities. Join our team and enjoy the freedom of the open
                 road while building a rewarding career with competitive pay and
@@ -117,10 +117,10 @@ export default function Drive() {
       <section id="form" className="bg-[#1c2016] py-[50px] xl:py-[75px]">
         <div className="container px-5">
           <div className="w-full md:w-[70%] xl:w-1/2 text-white mb-10">
-            <h3 className="brigendsExpanded text-[24px] lg:text-[32px] tracking-[0.08em] uppercase mb-5">
+            <h3 className="brigendsExpanded text-xl sm:text-2xl md:text-[28px] lg:text-[36px] tracking-[0.08em] uppercase mb-5">
               quick pre-qualify form
             </h3>
-            <p className="text-base lg:text-lg xl:text-xl tracking-[0.08em]">
+            <p className="text-sm md:text-base lg:text-lg tracking-[0.08em]">
               if you have Tractor-Trailar Experience, fill out our Pre Qualify
               form and a recruiter will you shortly
             </p>
@@ -141,10 +141,10 @@ export default function Drive() {
         <div className="container px-5 text-black">
           <div className="drive_section_top hidden lg:block"></div>
           <div className="w-full lg:w-1/2 flex flex-col ml-auto gap-y-5 lg:gap-y-10 xl:gap-y-[65px] lg:pl-12 py-10 lg:py-0">
-            <h2 className="brigendsExpanded text-xl lg:text-3xl xl:text-4xl tracking-[0.08em] uppercase lg:text-right border-b-2 border-[#ff0000] pb-5 lg:pb-[15px] xl:pb-[30px]">
+            <h2 className="brigendsExpanded text-xl lg:text-3xl xl:text-4xl tracking-[0.08em] uppercase lg:text-right border-b-2 border-[#ff0000] pb-5">
               Driver qualifications minimum requirements
             </h2>
-            <p className="text-base lg:text-lg xl:text-2xl tracking-[0.08em] lg:text-right">
+            <p className="text-sm md:text-base lg:text-lg tracking-[0.08em] lg:text-right">
               ⁃ Valid Commercial Driver’s License Class A ⁃ Clean Driving
               Record: Safe and reliable driving history. ⁃ Experience: At least
               1year of professional driving experience preferred ⁃ Strong Work

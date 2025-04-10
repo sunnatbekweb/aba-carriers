@@ -3,7 +3,7 @@ import React from "react";
 export const Menu = () => {
   return (
     <svg
-      width="30"
+      width="20"
       height="23"
       viewBox="0 0 30 23"
       fill="none"

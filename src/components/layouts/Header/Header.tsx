@@ -24,23 +24,20 @@ export const Header = () => {
 
   return (
     <header className={`${styles.header} flex justify-between`}>
-      <div className="w-full flex items-center h-[65px] md:h-[95px] lg:h-[110px] xl:h-[135px]">
+      <div className="w-full flex items-center h-[65px] md:h-[95px] lg:h-[120px]">
         <div className="absolute left-0 top-0">
           <Link
             href={"/"}
-            className={`${styles.logo} w-40 md:w-[230px] xl:w-[410px] h-fit flex flex-col items-center py-3 lg:py-5`}
+            className={`${styles.logo} w-40 md:w-[230px] xl:w-[340px] h-fit flex flex-col items-center py-3 lg:py-5`}
           >
             <div className="flex flex-col items-center">
               <Image
                 width={160}
                 height={65}
                 src="/icons/header_icons/Logo.svg"
-                className="w-[70px] md:w-[120px] xl:w-[160px] md:h-auto"
+                className="w-[70px] md:w-[120px] md:h-auto"
                 alt="Logo"
               />
-              <p className="text-[8px] md:text-sm xl:text-lg text-white">
-                CARRIERS
-              </p>
             </div>
           </Link>
         </div>
@@ -62,7 +59,7 @@ export const Header = () => {
             </Link>
             <button
               onClick={() => setIsContactOpen(true)}
-              className={`${styles.icon} flex items-center text-white gap-x-2.5 text-2xl`}
+              className={`${styles.icon} flex items-center text-white gap-x-2.5 text-xl`}
             >
               <div className={"rotate-90"}>
                 <Phone />
@@ -71,7 +68,7 @@ export const Header = () => {
             </button>
             <button
               onClick={() => setIsNavOpen(true)}
-              className={`${styles.icon} flex items-center gap-x-2.5 text-white text-2xl cursor-pointer`}
+              className={`${styles.icon} flex items-center gap-x-2.5 text-white text-xl cursor-pointer`}
             >
               <Menu />
               <span className="hidden md:block">Menu</span>

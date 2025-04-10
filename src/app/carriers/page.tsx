@@ -35,15 +35,15 @@ export default function Carriers() {
         <div className="container px-5">
           <div className="w-full lg:w-1/2 lg:pr-14">
             <div className="pb-5 md:pb-[15px] lg:pb-[30px] border-b-2 border-[#ff0000] mb-10 lg:mb-[65px]">
-              <h3 className="brigendsExpanded text-[24px] md:text-3xl tracking-[0.08em] mb-2">
-                WHA ABA CARRIERS PAGE
+              <h3 className="brigendsExpanded text-xl md:text-[28px] lg:text-[36px] tracking-[0.08em] mb-2">
+                WHY ABA CARRIERS
               </h3>
               <p className="text-xs tracking-[0.08em]">
                 Choose us for reliable service, unmatched expertise, and
                 top-notch protection for your freight
               </p>
             </div>
-            <p className="text-base md:text-lg">
+            <p className="text-sm md:text-base lg:text-lg">
               At ABA, our mission is to prosper through excellence, delivering
               top-tier service to our customers. Our core policy is simple: do
               our best, do what’s right, and treat others with respect.
@@ -73,15 +73,15 @@ export default function Carriers() {
               What sets ABA apart
             </h3>
             <ol className="flex flex-col gap-y-[30px] text-white lg:text-black">
-              <li className="text-base lg:text-lg xl:text-2xl tracking-[0.08em] lg:text-right">
+              <li className="text-sm md:text-base lg:text-lg tracking-[0.08em] lg:text-right">
                 On-Time Delivery: We guarantee on-time delivery for every
                 shipment, ensuring your freight arrives as scheduled
               </li>
-              <li className="text-base lg:text-lg xl:text-2xl tracking-[0.08em] lg:text-right">
+              <li className="text-sm md:text-base lg:text-lg tracking-[0.08em] lg:text-right">
                 Comprehensive Insurance Coverage: We offer A+ Insurance Coverage
                 with a $250,000 Cargo Protection Limit for peace of mind
               </li>
-              <li className="text-base lg:text-lg xl:text-2xl tracking-[0.08em] lg:text-right">
+              <li className="text-sm md:text-base lg:text-lg tracking-[0.08em] lg:text-right">
                 Expertise with High-Value Loads: Our highly skilled team drivers
                 are experienced in handling time-critical and high-value
                 shipments, ensuring secure and efficient transportation
@@ -92,7 +92,7 @@ export default function Carriers() {
       </section>
       <section className="bg-[#1C2016] py-20">
         <div className="container px-5">
-          <h3 className="brigendsExpanded text-[28px] lg:text-[35px] xl:text-[45px] text-white tracking-[0.08em] mb-5 lg:mb-[50px]">
+          <h3 className="brigendsExpanded text-xl md:text-[28px] lg:text-[36px] text-white tracking-[0.08em] mb-5 lg:mb-[50px]">
             Our features
           </h3>
         </div>

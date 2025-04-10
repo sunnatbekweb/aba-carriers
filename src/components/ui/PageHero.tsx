@@ -6,7 +6,6 @@ export const PageHero: React.FC<HeroProps> = ({ url, title }) => {
   return (
     <section
       className={`h-screen relative flex items-center justify-center px-5`}
-      // style={{ backgroundImage: `url(${url})` }}
     >
       <Image
         src={url}
@@ -18,7 +17,7 @@ export const PageHero: React.FC<HeroProps> = ({ url, title }) => {
       />
       <h2
         className={
-          "brigendsExpanded text-4xl md:text-[40px] lg:text-[60px] text-center text-white"
+          "brigendsExpanded text-2xl md:text-[28px] lg:text-[36px] text-center text-white"
         }
       >
         {title}

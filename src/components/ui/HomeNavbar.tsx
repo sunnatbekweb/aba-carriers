@@ -40,29 +40,41 @@ export const HomeNavbar = () => {
 
   return (
     <>
+      {/* Кнопка открытия только для мобильных */}
       <button
         onClick={() => setNavOpen(true)}
-        className={`${
+        className={`lg:hidden ${
           navOpen ? "opacity-0 collapse" : "opacity-100 visible"
-        } w-[74px] h-[74px] rounded-full fixed top-[33%] z-0 -left-[36px] bg-[#202020] flex items-center justify-end pr-1.5`}
+        } w-[64px] h-[64px] rounded-full fixed top-[33%] z-0 -left-[36px] bg-[#202020] flex items-center justify-end pr-1.5`}
       >
         <Image
           src={"/icons/nav_icons/nav_open.svg"}
-          width={25}
-          height={25}
+          width={20}
+          height={20}
           alt={"Nav button icon"}
         />
       </button>
+
       <nav
-        className={`${styles.nav} ${
-          navOpen ? "opacity-100 visible" : "opacity-0 collapse"
-        } fixed z-10 top-1/2 -translate-y-1/2 left-3 lg:left-8 xl:left-16 px-2.5 py-3.5 rounded-[50px] bg-[#202020] duration-300`}
+        className={`${
+          styles.nav
+        } fixed z-[1] top-1/2 -translate-y-1/2 left-2 lg:left-4 xl:left-8 px-2.5 py-3.5 rounded-[50px] bg-[#202020] duration-300
+      ${
+        navOpen ? "opacity-100 visible" : "opacity-0 collapse"
+      } lg:opacity-100 lg:visible`}
       >
         <ul className="flex flex-col gap-y-12">
           <li>
             <Link
               href="/"
-              className={activeSection === "" ? "nav_link-active" : ""}
+              className={
+                activeSection !== "carriers" &&
+                activeSection !== "drive" &&
+                activeSection !== "services" &&
+                activeSection !== "about"
+                  ? "nav_link-active"
+                  : ""
+              }
             >
               <Home />
             </Link>

@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <footer className={`${styles.footer} py-10 relative`}>
+    <footer className={`${styles.footer} py-22 relative`}>
       <div className="container">
         <div className="lg:pl-[64px]">
           <div className="w-fit absolute left-1/2 -translate-x-1/2 top-[10px] md:left-[25px] md:translate-x-0 md:top-[10px] lg:top-10 lg:left-[115px]">
@@ -15,9 +15,6 @@ export const Footer = () => {
               height={65}
               alt="Logo"
             />
-            <p className="text-lg text-[#ff0000] tracking-[0.5em] text-center">
-              CARRIERS
-            </p>
           </div>
           <div className="pt-[160px] grid grid-cols-1 gap-y-10 items-center md:grid-cols-2 lg:items-start lg:grid-cols-4 lg:gap-x-10 justify-between">
             <div className="flex flex-col items-center md:flex-row md:items-start gap-x-5">
@@ -58,20 +55,6 @@ export const Footer = () => {
                       className="font-normal text-center md:text-left"
                     >
                       Fleet@abacarriers.com
-                    </Link>
-                  </li>
-                  <li className="flex flex-col">
-                    <Link
-                      href={"mailto:Steve@abacarriers.com"}
-                      className="font-normal text-center md:text-left"
-                    >
-                      Steve@abacarriers.com
-                    </Link>
-                    <Link
-                      href={"mailto:Batir@abacarriers.com"}
-                      className="font-normal text-center md:text-left"
-                    >
-                      Batir@abacarriers.com
                     </Link>
                   </li>
                 </ul>

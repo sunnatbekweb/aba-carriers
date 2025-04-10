@@ -33,7 +33,7 @@ export const AboutSectionGsap = () => {
   return (
     <div
       ref={wrapperRef}
-      className="w-[220px] h-auto md:w-[310px] xl:w-[640px] absolute top-[50%] left-[50%] -translate-1/2 z-20"
+      className="w-[220px] h-auto md:w-[310px] xl:w-[640px] absolute top-[50%] left-[50%] -translate-y-1/2 -translate-x-1/2 z-20"
     >
       <Image
         src={"/icons/about_logo.svg"}

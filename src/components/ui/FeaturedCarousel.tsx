@@ -47,14 +47,14 @@ export const FeaturedCarousel = () => {
       >
         <SwiperSlide>
           <div className="max-w-[500px]">
-            <h4 className="text-xl lg:text-2xl xl:text-3xl mb-5 lg:mb-10">
+            <h4 className="text-lg lg:text-xl mb-5 lg:mb-10">
               Safety and Compliance
             </h4>
-            <ol className="flex flex-col gap-y-12">
-              <li className="text-lg lg:text-2xl">
+            <ol className="flex flex-col gap-y-6">
+              <li className="text-sm md:text-lg lg:text-lg">
                 Full adherence to FMCSA and DOT standards
               </li>
-              <li className="text-lg lg:text-2xl">
+              <li className="text-sm md:text-lg lg:text-lg">
                 Comprehensive driver training programs and strict safety
                 protocols
               </li>
@@ -63,14 +63,14 @@ export const FeaturedCarousel = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="max-w-[500px]">
-            <h4 className="text-xl lg:text-2xl xl:text-3xl mb-5 lg:mb-10">
+            <h4 className="text-lg lg:text-xl mb-5 lg:mb-10">
               Advanced Technology
             </h4>
-            <ol className="flex flex-col gap-y-12">
-              <li className="text-lg lg:text-2xl">
+            <ol className="flex flex-col gap-y-6">
+              <li className="text-sm md:text-lg lg:text-lg">
                 Real-time tracking and GPS visibility powered by Samsara
               </li>
-              <li className="text-lg lg:text-2xl">
+              <li className="text-sm md:text-lg lg:text-lg">
                 Automated systems for billing and documentation, ensuring
                 efficiency
               </li>
@@ -79,11 +79,11 @@ export const FeaturedCarousel = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="max-w-[500px]">
-            <h4 className="text-xl lg:text-2xl xl:text-3xl mb-5 lg:mb-10">
+            <h4 className="text-lg lg:text-xl mb-5 lg:mb-10">
               Reliable Fleet
             </h4>
-            <ol className="flex flex-col gap-y-12">
-              <li className="text-lg lg:text-2xl">
+            <ol className="flex flex-col gap-y-6">
+              <li className="text-sm md:text-lg lg:text-lg">
                 Modern, well-maintained equipment for safe and dependable
                 transport
               </li>
@@ -92,11 +92,11 @@ export const FeaturedCarousel = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="max-w-[500px]">
-            <h4 className="text-xl lg:text-2xl xl:text-3xl mb-5 lg:mb-10">
+            <h4 className="text-lg lg:text-xl mb-5 lg:mb-10">
               Around-the-Clock Support
             </h4>
-            <ol className="flex flex-col gap-y-12">
-              <li className="text-lg lg:text-2xl">
+            <ol className="flex flex-col gap-y-6">
+              <li className="text-sm md:text-lg lg:text-lg">
                 A dedicated 24/7 Dispatch Department ready to assist with any
                 needs
               </li>
@@ -105,11 +105,11 @@ export const FeaturedCarousel = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="max-w-[500px]">
-            <h4 className="text-xl lg:text-2xl xl:text-3xl mb-5 lg:mb-10">
+            <h4 className="text-lg lg:text-xl mb-5 lg:mb-10">
               Highly Skilled Drivers
             </h4>
-            <ol className="flex flex-col gap-y-12">
-              <li className="text-lg lg:text-2xl">
+            <ol className="flex flex-col gap-y-6">
+              <li className="text-sm md:text-lg lg:text-lg">
                 Experienced professionals committed to delivering excellent
                 service
               </li>
