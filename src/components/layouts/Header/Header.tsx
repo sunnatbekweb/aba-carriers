@@ -24,18 +24,18 @@ export const Header = () => {
 
   return (
     <header className={`${styles.header} flex justify-between`}>
-      <div className="w-full flex items-center h-[65px] md:h-[95px] lg:h-[120px]">
+      <div className="w-full flex items-center h-[70px] md:h-[75px]">
         <div className="absolute left-0 top-0">
           <Link
             href={"/"}
-            className={`${styles.logo} w-40 md:w-[230px] xl:w-[340px] h-fit flex flex-col items-center py-3 lg:py-5`}
+            className={`${styles.logo} w-40 md:w-[230px] xl:w-[220px] h-fit flex flex-col items-center py-3`}
           >
             <div className="flex flex-col items-center">
               <Image
                 width={160}
                 height={65}
                 src="/icons/header_icons/Logo.svg"
-                className="w-[70px] md:w-[120px] md:h-auto"
+                className="w-[70px] md:w-[80px] md:h-auto"
                 alt="Logo"
               />
             </div>

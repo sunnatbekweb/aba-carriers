@@ -1,5 +1,5 @@
 import { PageHero } from "@/components/ui/PageHero";
-import BgImage from "../../../public/images/page_hero/about_page.webp";
+import BgImage from "../../../public/images/page_hero/about_hero_bg.webp";
 
 export default function About() {
   return (

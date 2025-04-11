@@ -57,7 +57,7 @@ export const HomeNavbar = () => {
       <nav
         className={`${
           styles.nav
-        } fixed z-[1] top-1/2 -translate-y-1/2 left-2 lg:left-4 xl:left-8 px-2.5 py-3.5 rounded-[50px] bg-[#202020] duration-300
+        } fixed z-[1] top-1/2 -translate-y-1/2 left-2 lg:left-4 px-1.5 py-3 rounded-[50px] bg-[#202020] duration-300
       ${
         navOpen ? "opacity-100 visible" : "opacity-0 collapse"
       } lg:opacity-100 lg:visible`}

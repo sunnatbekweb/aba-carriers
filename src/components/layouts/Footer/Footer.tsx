@@ -13,10 +13,11 @@ export const Footer = () => {
               src={"/icons/footer_icons/Logo_red.svg"}
               width={160}
               height={65}
+              className="w-[120px] h-auto sm:w-[160px] md:w-[120px] lg:w-[160px]"
               alt="Logo"
             />
           </div>
-          <div className="pt-[160px] grid grid-cols-1 gap-y-10 items-center md:grid-cols-2 lg:items-start lg:grid-cols-4 lg:gap-x-10 justify-between">
+          <div className="pt-[60px] lg:pt-[120px] grid grid-cols-1 gap-y-10 items-center md:grid-cols-2 lg:items-start lg:grid-cols-4 lg:gap-x-10 justify-between">
             <div className="flex flex-col items-center md:flex-row md:items-start gap-x-5">
               <Image
                 src={"/icons/footer_icons/email.svg"}
