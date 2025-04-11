@@ -14,7 +14,7 @@ export default function About() {
           className="mx-auto text-[14px] lg:text-[19px] text-black leading-relaxed text-center px-4 mt-12 
               max-w-[300px] sm:max-w-[900px] lg:max-w-[1400px] tracking-widest"
         >
-          Founded in 2021, <span>[Your Company Name]</span> has rapidly grown
+          Founded in 2021, <span>[ABA]</span> has rapidly grown
           into a trusted name in the trucking industry. With a strong focus on
           efficiency and reliability, we have successfully delivered tens of
           thousands of loads across the country. Backed by a dedicated team of
