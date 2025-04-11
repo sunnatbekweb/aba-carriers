@@ -116,11 +116,11 @@ export default function Drive() {
       </section>
       <section id="form" className="bg-[#1c2016] py-[50px] xl:py-[75px]">
         <div className="container px-5">
-          <div className="w-full md:w-[70%] xl:w-1/2 text-white mb-10">
-            <h3 className="brigendsExpanded text-xl sm:text-2xl md:text-[28px] lg:text-[36px] tracking-[0.08em] uppercase mb-5">
+          <div className="w-full md:w-[70%] mx-auto xl:w-1/2 text-white mb-10">
+            <h3 className="brigendsExpanded text-xl sm:text-2xl md:text-[28px] lg:text-[36px] tracking-[0.08em] text-center uppercase mb-5">
               quick pre-qualify form
             </h3>
-            <p className="text-sm md:text-base lg:text-lg tracking-[0.08em]">
+            <p className="text-sm md:text-base lg:text-lg tracking-[0.08em] text-center">
               if you have Tractor-Trailar Experience, fill out our Pre Qualify
               form and a recruiter will you shortly
             </p>

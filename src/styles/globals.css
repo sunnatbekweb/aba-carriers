@@ -33,6 +33,112 @@ button {
   cursor: pointer;
 }
 
+/* ========== SWIPER STYLES ========== */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background: #fff;
+  border-radius: 30px;
+  padding: 40px 30px;
+  display: flex ;
+  height: auto !important;
+
+  & h4 {
+    color: #ff0000;
+    font-family: "Brigends Expanded";
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  & .ordered_list {
+    counter-reset: custom-counter;
+    list-style: none;
+
+    & li {
+      counter-increment: custom-counter;
+      position: relative;
+      padding-left: 50px;
+      margin-bottom: 16px;
+
+      &::before {
+        content: counter(custom-counter);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: 2px solid #ff0000;
+        color: #ff0000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 14px;
+      }
+    }
+  }
+
+  &:nth-child(even) {
+    background: #ff0000;
+    color: #fff;
+
+    & h4 {
+      color: #fff;
+    }
+
+    & .ordered_list {
+      counter-reset: custom-counter;
+      list-style: none;
+
+      & li {
+        counter-increment: custom-counter;
+        position: relative;
+        padding-left: 50px;
+        margin-bottom: 16px;
+
+        &::before {
+          content: counter(custom-counter);
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          border: 2px solid #ffffff;
+          color: #ffffff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: bold;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: static !important;
+  width: 36px !important;
+  height: 36px !important;
+  margin: 0 !important;
+
+  & svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  &::after {
+    content: "" !important;
+  }
+}
+
 /* ========== NAVIGATION MODAL ========== */
 .nav_modal {
   background-image: url("/images/nav_bg.png");
@@ -105,55 +211,6 @@ button {
   color: var(--text-color);
 }
 
-/* ========== SWIPER STYLES ========== */
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  font-size: 18px;
-  background: #fff;
-  border-radius: 30px;
-  width: 80% !important;
-  height: auto !important;
-  padding: 40px 30px;
-
-  & h4 {
-    color: #ff0000;
-    font-family: "Brigends Expanded";
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-  }
-
-  &:nth-child(even) {
-    background: #ff0000;
-    color: #fff;
-
-    & h4 {
-      color: #fff;
-    }
-  }
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  position: static !important;
-  width: 36px !important;
-  height: 36px !important;
-  margin: 0 !important;
-
-  & svg {
-    width: 20px !important;
-    height: 20px !important;
-  }
-
-  &::after {
-    content: "" !important;
-  }
-}
-
 /* ========== Drive page Styles ========== */
 .drive_section_top {
   background: linear-gradient(90deg, #2a262c 0%, #f5f7f2 95%);
@@ -188,10 +245,6 @@ button {
       @apply block absolute bottom-[35%] w-full h-0.5 bg-red-500;
       content: "";
     }
-  }
-
-  .swiper-slide {
-    width: 30% !important;
   }
 }
 

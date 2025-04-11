@@ -92,7 +92,7 @@ export default function Carriers() {
       </section>
       <section className="bg-[#1C2016] py-20">
         <div className="container px-5">
-          <h3 className="brigendsExpanded text-xl md:text-[28px] lg:text-[36px] text-white tracking-[0.08em] mb-5 lg:mb-[50px]">
+          <h3 className="brigendsExpanded text-xl md:text-[28px] lg:text-[36px] text-white tracking-[0.08em] text-center mb-5 lg:mb-[50px]">
             Our features
           </h3>
         </div>
