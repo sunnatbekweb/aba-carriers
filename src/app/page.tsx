@@ -143,7 +143,7 @@ export default function Home() {
       <BottomGradient />
       <section
         id={"about"}
-        className={`${styles.carriers} pb-[60px] lg:py-[125px]`}
+        className={`relative pb-[60px] lg:py-[125px]`}
       >
         <div className="w-full lg:absolute top-0 lg:w-1/2 h-full mb-6">
           <div className="relative -z-10 h-full">

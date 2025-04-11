@@ -92,7 +92,7 @@ export const ContactModal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
             +1 667-407-1111
           </a>
         </li>
-        <li
+        {/* <li
           className={
             "flex flex-col text-center xl:text-left gap-y-4 md:gap-y-8 px-6 py-5 md:px-12 md:py-10 xl:px-24 xl:py-14"
           }
@@ -104,7 +104,7 @@ export const ContactModal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
           >
             +1 513 899 8888
           </a>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

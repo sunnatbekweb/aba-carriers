@@ -8,7 +8,7 @@ import Image from "next/image";
 gsap.registerPlugin(ScrollTrigger);
 
 export const AboutSectionGsap = () => {
-  const wrapperRef = useRef<HTMLDivElement | null>(null);
+  const wrapperRef = useRef<HTMLImageElement | null>(null);
 
   useEffect(() => {
     if (wrapperRef.current) {
@@ -31,11 +31,9 @@ export const AboutSectionGsap = () => {
   }, []);
 
   return (
-    <div
-      ref={wrapperRef}
-      className="w-[220px] h-auto md:w-[310px] xl:w-[640px] absolute top-[50%] left-[50%] -translate-y-1/2 -translate-x-1/2 z-20"
-    >
+    <div className="w-[220px] h-auto md:w-[310px] 2xl:w-[420px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
       <Image
+        ref={wrapperRef}
         src={"/icons/about_logo.svg"}
         width={640}
         height={380}

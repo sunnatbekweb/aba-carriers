@@ -32,13 +32,13 @@ export const Footer = () => {
                   <li className="flex flex-col">
                     <Link
                       href={"mailto:Hiring@abacarriers.com"}
-                      className="font-normal text-center md:text-left"
+                      className="font-normal text-sm 2xl:text-base text-center md:text-left"
                     >
                       Hiring@abacarriers.com
                     </Link>
                     <Link
                       href={"mailto:Dispatch@abacarriers.com"}
-                      className="font-normal text-center md:text-left"
+                      className="font-normal text-sm 2xl:text-base text-center md:text-left"
                     >
                       Dispatch@abacarriers.com
                     </Link>
@@ -46,13 +46,13 @@ export const Footer = () => {
                   <li className="flex flex-col">
                     <Link
                       href={"mailto:Billing@abacarriers.com"}
-                      className="font-normal text-center md:text-left"
+                      className="font-normal text-sm 2xl:text-base text-center md:text-left"
                     >
                       Billing@abacarriers.com
                     </Link>
                     <Link
                       href={"mailto:Fleet@abacarriers.com"}
-                      className="font-normal text-center md:text-left"
+                      className="font-normal text-sm 2xl:text-base text-center md:text-left"
                     >
                       Fleet@abacarriers.com
                     </Link>
@@ -72,13 +72,13 @@ export const Footer = () => {
                   - Contact address
                 </h4>
                 <ul className={`${styles.footer_list} flex flex-col gap-y-1.5`}>
-                  <li className="flex flex-col text-center md:text-left">
+                  <li className="flex flex-col text-sm 2xl:text-base text-center md:text-left">
                     4764 Fishburg Rd, Suite D2 <br />
-                    Huber Heights, OH 45424 ( Official address )
+                    Huber Heights, OH 45424 (Official address)
                   </li>
-                  <li className="flex flex-col text-center md:text-left">
+                  <li className="flex flex-col text-sm 2xl:text-base text-center md:text-left">
                     537 E S Frontage Rd Suite 202, <br />
-                    Bolingbrook, IL 60440 ( Main address, Yard  )
+                    Bolingbrook, IL 60440 (Main address, Yard)
                   </li>
                 </ul>
               </div>
@@ -98,15 +98,15 @@ export const Footer = () => {
                   <li className="flex flex-col">
                     <Link
                       href={"tel:+12404498888"}
-                      className="font-normal text-center md:text-left"
+                      className="font-normal text-sm 2xl:text-base text-center md:text-left"
                     >
-                      +1 240-449-8888 ( Hiring )
+                      +1 240-449-8888 (Hiring)
                     </Link>
                     <Link
                       href={"tel:+16103335555"}
-                      className="font-normal text-center md:text-left"
+                      className="font-normal text-sm 2xl:text-base text-center md:text-left"
                     >
-                      +1 610-333-5555 ( Dispatch )
+                      +1 610-333-5555 (Dispatch)
                     </Link>
                   </li>
                 </ul>

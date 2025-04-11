@@ -22,19 +22,15 @@
 
 .services {
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
   padding: 50px 0;
 }
 
-.carriers {
-  position: relative;
-}
-
-.ordered_list{
+.ordered_list {
   counter-reset: custom-counter;
   list-style: none;
 
-  li {
+  & li {
     counter-increment: custom-counter;
     position: relative;
     padding-left: 50px;

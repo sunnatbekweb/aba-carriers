@@ -37,7 +37,7 @@ export default function Drive() {
       <section className="py-[50px] lg:py-20 xl:py-[100px]">
         <div className="container px-5 flex flex-col gap-y-10">
           <div className="flex flex-col xl:flex-row-reverse items-center gap-x-12 gap-y-10">
-            <div className="md:w-[60%] xl:w-1/2 ml-auto">
+            <div className="md:w-[75%] xl:w-1/2 ml-auto">
               <h2 className="brigendsExpanded text-xl sm:text-2xl md:text-[28px] lg:text-[36px] tracking-[0.08em] md:text-right uppercase border-b-2 border-[#ff0000] pb-5">
                 Join Our Team as an company driver
               </h2>
