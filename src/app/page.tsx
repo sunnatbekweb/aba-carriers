@@ -116,7 +116,9 @@ export default function Home() {
           <h2 className="brigendsExpanded text-2xl md:text-[28px] lg:text-[36px] border-b-2 border-[#ff0000] w-fit mt-10 pb-3">
             ABA SERVICES
           </h2>
-          <ol className={`${styles.ordered_list} flex flex-col w-full lg:w-1/2 gap-y-[60px] my-[65px] list-decimal`}>
+          <ol
+            className={`${styles.ordered_list} flex flex-col w-full lg:w-1/2 gap-y-[60px] my-[65px] list-decimal`}
+          >
             <li className="text-sm md:text-base lg:text-lg">
               Team Transit Shipments: Focused on expedited team transit to
               provide time-sensitive transportation solutions
@@ -141,10 +143,7 @@ export default function Home() {
         </div>
       </section>
       <BottomGradient />
-      <section
-        id={"about"}
-        className={`relative pb-[60px] lg:py-[125px]`}
-      >
+      <section id={"about"} className={`relative pb-[60px] lg:py-[125px]`}>
         <div className="w-full lg:absolute top-0 lg:w-1/2 h-full mb-6">
           <div className="relative -z-10 h-full">
             <Image
