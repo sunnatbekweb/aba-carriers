@@ -114,7 +114,7 @@ export const Footer = () => {
               </div>
             </div>
             <div className="flex gap-x-10 justify-center lg:justify-start">
-              <Link href={"#"}>
+              <Link href={"#"} target="_blank">
                 <Image
                   src={"/icons/telegram.svg"}
                   width={40}
@@ -122,7 +122,10 @@ export const Footer = () => {
                   alt="telegram icon"
                 />
               </Link>
-              <Link href={"#"}>
+              <Link
+                href={"https://www.instagram.com/abacarriers.inc/"}
+                target="_blank"
+              >
                 <Image
                   src={"/icons/instagram.svg"}
                   width={40}
@@ -130,7 +133,12 @@ export const Footer = () => {
                   alt="telegram icon"
                 />
               </Link>
-              <Link href={"#"}>
+              <Link
+                href={
+                  "https://www.facebook.com/people/ABA-Carriers-Inc/100089372628394/"
+                }
+                target="_blank"
+              >
                 <Image
                   src={"/icons/facebook.svg"}
                   width={40}

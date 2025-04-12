@@ -65,7 +65,7 @@ export const HomeNavbar = () => {
         <ul className="flex flex-col gap-y-12">
           <li>
             <Link
-              href="/"
+              href="#"
               className={
                 activeSection !== "carriers" &&
                 activeSection !== "drive" &&
