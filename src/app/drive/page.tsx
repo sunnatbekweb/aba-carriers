@@ -28,7 +28,14 @@ export default function Drive() {
             src={"/images/drive/image1.png"}
             width={1020}
             height={840}
-            className="w-full h-full object-cover"
+            className="hidden lg:flex w-full h-full object-cover"
+            alt="Drive section image"
+          />
+          <Image
+            src={"/images/drive/image3.png"}
+            width={1020}
+            height={840}
+            className="lg:hidden w-full h-full object-cover"
             alt="Drive section image"
           />
         </div>

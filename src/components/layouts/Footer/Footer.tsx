@@ -27,7 +27,7 @@ export const Footer = () => {
               />
               <div className="flex flex-col">
                 <h3 className="text-lg text-center md:text-left text-white font-bold leading-[200%] border-b border-[#ff0000] pb-1 mb-2.5">
-                  - Contact email
+                  - Contact emails
                 </h3>
                 <ul className={`${styles.footer_list} flex flex-col gap-y-1.5`}>
                   <li className="flex flex-col">
@@ -35,13 +35,13 @@ export const Footer = () => {
                       href={"mailto:Hiring@abacarriers.com"}
                       className="font-normal text-sm 2xl:text-base text-center md:text-left"
                     >
-                      Hiring@abacarriers.com
+                      hiring@abacarriers.com
                     </Link>
                     <Link
                       href={"mailto:Dispatch@abacarriers.com"}
                       className="font-normal text-sm 2xl:text-base text-center md:text-left"
                     >
-                      Dispatch@abacarriers.com
+                      dispatch@abacarriers.com
                     </Link>
                   </li>
                   <li className="flex flex-col">
@@ -49,13 +49,13 @@ export const Footer = () => {
                       href={"mailto:Billing@abacarriers.com"}
                       className="font-normal text-sm 2xl:text-base text-center md:text-left"
                     >
-                      Billing@abacarriers.com
+                      billing@abacarriers.com
                     </Link>
                     <Link
                       href={"mailto:Fleet@abacarriers.com"}
                       className="font-normal text-sm 2xl:text-base text-center md:text-left"
                     >
-                      Fleet@abacarriers.com
+                      fleet@abacarriers.com
                     </Link>
                   </li>
                 </ul>
@@ -70,7 +70,7 @@ export const Footer = () => {
               />
               <div className="flex flex-col">
                 <h4 className="text-lg text-center md:text-left text-white font-bold leading-[200%] border-b border-[#ff0000] pb-1 mb-2.5">
-                  - Contact address
+                  - Contact addresses
                 </h4>
                 <ul className={`${styles.footer_list} flex flex-col gap-y-1.5`}>
                   <li className="flex flex-col text-sm 2xl:text-base text-center md:text-left">
@@ -93,7 +93,7 @@ export const Footer = () => {
               />
               <div className="flex flex-col">
                 <h5 className="text-lg text-center md:text-left text-white font-bold leading-[200%] border-b border-[#ff0000] pb-1 mb-2.5">
-                  - Contact email
+                  - Contact emails
                 </h5>
                 <ul className={`${styles.footer_list} flex flex-col gap-y-1.5`}>
                   <li className="flex flex-col">
