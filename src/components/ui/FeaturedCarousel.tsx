@@ -9,6 +9,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import { Navigation } from "swiper/modules";
+import { SlideData } from "@/data";
 
 export const FeaturedCarousel = () => {
   useEffect(() => {
@@ -54,67 +55,22 @@ export const FeaturedCarousel = () => {
             spaceBetween: 24,
           },
         }}
+        loop={true}
         modules={[Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <h4 className="text-base lg:text-lg mb-5 lg:mb-10">
-            Safety and Compliance
-          </h4>
-          <ol className={`ordered_list flex flex-col gap-y-6`}>
-            <li className="text-sm lg:text-base">
-              Full adherence to FMCSA and DOT standards
-            </li>
-            <li className="text-sm lg:text-base">
-              Comprehensive driver training programs and strict safety protocols
-            </li>
-          </ol>
-        </SwiperSlide>
-        <SwiperSlide>
-          <h4 className="text-base lg:text-lg mb-5 lg:mb-10">
-            Advanced Technology
-          </h4>
-          <ol className={`ordered_list flex flex-col gap-y-6`}>
-            <li className="text-sm lg:text-base">
-              Real-time tracking and GPS visibility powered by Samsara
-            </li>
-            <li className="text-sm lg:text-base">
-              Automated systems for billing and documentation, ensuring
-              efficiency
-            </li>
-          </ol>
-        </SwiperSlide>
-        <SwiperSlide>
-          <h4 className="text-base lg:text-lg mb-5 lg:mb-10">Reliable Fleet</h4>
-          <ol className={`ordered_list flex flex-col gap-y-6`}>
-            <li className="text-sm lg:text-base">
-              Modern, well-maintained equipment for safe and dependable
-              transport
-            </li>
-          </ol>
-        </SwiperSlide>
-        <SwiperSlide>
-          <h4 className="text-base lg:text-lg mb-5 lg:mb-10">
-            Around-the-Clock Support
-          </h4>
-          <ol className={`ordered_list flex flex-col gap-y-6`}>
-            <li className="text-sm lg:text-base">
-              A dedicated 24/7 Dispatch Department ready to assist with any
-              needs
-            </li>
-          </ol>
-        </SwiperSlide>
-        <SwiperSlide>
-          <h4 className="text-base lg:text-lg mb-5 lg:mb-10">
-            Highly Skilled Drivers
-          </h4>
-          <ol className={`ordered_list flex flex-col gap-y-6`}>
-            <li className="text-sm lg:text-base">
-              Experienced professionals committed to delivering excellent
-              service
-            </li>
-          </ol>
-        </SwiperSlide>
+        {SlideData.map((item, index) => (
+          <SwiperSlide key={index}>
+            <h4 className="text-base lg:text-lg mb-5 lg:mb-10">{item.title}</h4>
+            <ol className={`ordered_list flex flex-col gap-y-6`}>
+              {item.list.map((point, index) => (
+                <li key={index} className="text-sm lg:text-base">
+                  {point}
+                </li>
+              ))}
+            </ol>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );
