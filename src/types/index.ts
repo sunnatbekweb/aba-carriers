@@ -14,6 +14,7 @@ export type FeedbackItem = {
   icon: string;
   text: string;
   username: string;
+  position: string;
 };
 
 export type Feedbacks = FeedbackItem[];

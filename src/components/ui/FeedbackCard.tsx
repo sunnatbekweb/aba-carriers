@@ -29,6 +29,9 @@ export const FeedbackCard: React.FC<{ item: FeedbackItem }> = ({ item }) => {
           >
             {item?.username}
           </h4>
+          <p className="font-semibold text-sm md:text-base tracking-[0.08em] text-center mt-5 lg:mt-[30px]">
+            {item?.position}
+          </p>
           <p className="text-sm md:text-base tracking-[0.08em] text-center mt-5 lg:mt-[30px]">
             {item?.text}
           </p>
