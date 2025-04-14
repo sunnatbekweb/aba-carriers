@@ -32,6 +32,19 @@ export const ContactModal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
             "flex flex-col border-b-2 border-[#ff0000] md:border-none text-center xl:text-left gap-y-4 md:gap-y-8 px-6 py-5 md:px-12 md:py-10 xl:px-24 xl:py-14"
           }
         >
+          <h4 className={"text-xl lg:text-[40px] font-bold"}>Main</h4>
+          <a
+            href={"tel:+16822915555"}
+            className={"text-base lg:text-[26px] font-semibold"}
+          >
+            +1 682-291-5555
+          </a>
+        </li>
+        <li
+          className={
+            "flex flex-col border-b-2 border-[#ff0000] md:border-none text-center xl:text-left gap-y-4 md:gap-y-8 px-6 py-5 md:px-12 md:py-10 xl:px-24 xl:py-14"
+          }
+        >
           <h4 className={"text-xl lg:text-[40px] font-bold"}>Hiring</h4>
           <a
             href={"tel:+12404498888"}
@@ -92,19 +105,6 @@ export const ContactModal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
             +1 667-407-1111
           </a>
         </li>
-        {/* <li
-          className={
-            "flex flex-col text-center xl:text-left gap-y-4 md:gap-y-8 px-6 py-5 md:px-12 md:py-10 xl:px-24 xl:py-14"
-          }
-        >
-          <h4 className={"text-xl lg:text-[40px] font-bold"}>Owner</h4>
-          <a
-            href={"tel:+15138998888"}
-            className={"text-base lg:text-[26px] font-semibold"}
-          >
-            +1 513 899 8888
-          </a>
-        </li> */}
       </ul>
     </div>
   );
