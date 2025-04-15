@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import styles from "@/styles/footer.module.css";
 import Link from "next/link";
+import { WhatsApp } from "../../../../public/icons/footer_icons/WhatsApp";
 
 export const Footer = () => {
   return (
@@ -114,13 +115,8 @@ export const Footer = () => {
               </div>
             </div>
             <div className="flex gap-x-10 justify-center lg:justify-start">
-              <Link href={"#"} target="_blank">
-                <Image
-                  src={"/icons/telegram.svg"}
-                  width={40}
-                  height={40}
-                  alt="telegram icon"
-                />
+              <Link href={"https://wa.me/998903351373"} target="_blank">
+                <WhatsApp />
               </Link>
               <Link
                 href={"https://www.instagram.com/abacarriers.inc/"}

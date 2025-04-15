@@ -44,14 +44,16 @@ export const Header = () => {
         <div className="container px-5 flex justify-end">
           <div className="flex items-center gap-x-5 md:gap-x-10">
             <Link
-              href={"#"}
+              href={"https://wa.me/998903351373"}
               aria-label="WhatsApp profile"
               className={`${styles.icon}`}
             >
               <WhatsApp />
             </Link>
             <Link
-              href={"#"}
+              href={
+                "https://www.facebook.com/people/ABA-Carriers-Inc/100089372628394/"
+              }
               aria-label="Facebook porfile"
               className={`${styles.icon}`}
             >
