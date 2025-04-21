@@ -149,7 +149,7 @@ export const Footer = () => {
                 </div>
                 <p className={"text-center py-10"}>Developed by:
                     <Link href={"https://onesystem.uz"}
-                          target={_blank}>OneSystem
+                          target={"_blank"}>OneSystem
                     </Link>
                 </p>
             </div>
