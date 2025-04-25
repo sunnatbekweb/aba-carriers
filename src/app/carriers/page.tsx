@@ -21,7 +21,7 @@ export default function Carriers() {
   const getFeedbacks = async () => {
     try {
       axios
-        .get(`${process.env.NEXT_PUBLIC_BASE_URL}/feedback/`)
+        .get(`https://aba.abacarriers.com/api/v1/os/feedback/`)
         .then((response) => setFeedbacks(response.data));
     } catch (error) {
       console.error(error);

@@ -45,6 +45,7 @@ export const Header = () => {
           <div className="flex items-center gap-x-5 md:gap-x-10">
             <Link
               href={"https://wa.me/998903351373"}
+              target="_blank"
               aria-label="WhatsApp profile"
               className={`${styles.icon}`}
             >
@@ -54,6 +55,7 @@ export const Header = () => {
               href={
                 "https://www.facebook.com/people/ABA-Carriers-Inc/100089372628394/"
               }
+              target="_blank"
               aria-label="Facebook porfile"
               className={`${styles.icon}`}
             >

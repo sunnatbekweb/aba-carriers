@@ -58,7 +58,7 @@ export const QuoteForm = () => {
     setLoading(true);
     try {
       await axios.post(
-        `${process.env.NEXT_PUBLIC_BASE_URL}/get-qoute/`,
+        `https://aba.abacarriers.com/api/v1/os/get-qoute/`,
         formData,
         {
           headers: {
@@ -93,7 +93,7 @@ export const QuoteForm = () => {
 
   useEffect(() => {
     axios
-      .get(`${process.env.NEXT_PUBLIC_BASE_URL}/equipment/`)
+      .get(`https://aba.abacarriers.com/api/v1/os/equipment/`)
       .then((response) => setEqiipment(response.data))
       .catch((error) => console.error(error));
   }, []);

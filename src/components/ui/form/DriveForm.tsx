@@ -35,7 +35,7 @@ export const DriveForm = () => {
 
     try {
       await axios.post(
-        `${process.env.NEXT_PUBLIC_BASE_URL}/pre-quality-form/`,
+        `https://aba.abacarriers.com/api/v1/os/pre-quality-form/`,
         payload,
         {
           headers: {

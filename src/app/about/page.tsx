@@ -15,7 +15,7 @@ export default function About() {
   const getStatistics = async () => {
     try {
       axios
-        .get(`${process.env.NEXT_PUBLIC_BASE_URL}/statistic/`)
+        .get(`https://aba.abacarriers.com/api/v1/os/statistic/`)
         .then((response) => setStatistics(response.data));
     } catch (error) {
       console.error(error);
