@@ -152,12 +152,17 @@ export default function Drive() {
               Driver qualifications minimum requirements
             </h2>
             <p className="text-sm md:text-base lg:text-lg tracking-[0.08em] lg:text-right">
-              ⁃ Valid Commercial Driver’s License Class A ⁃ Clean Driving
-              Record: Safe and reliable driving history. ⁃ Experience: At least
-              1year of professional driving experience preferred ⁃ Strong Work
-              Ethic: Commitment to safety, timeliness, and customer service ⁃
-              Must be able to meet minimum medical qualifications set by the
-              Federal Motor Carrier Safety Administration
+              ⁃ Valid Commercial Driver’s License Class A
+              <br />
+              ⁃ Clean Driving Record: Safe and reliable driving history.
+              <br />
+              ⁃ Experience: At least 1year of professional driving experience
+              preferred
+              <br />
+              ⁃ Strong Work Ethic: Commitment to safety, timeliness, and
+              customer service
+              <br />⁃ Must be able to meet minimum medical qualifications set by
+              the Federal Motor Carrier Safety Administration
             </p>
           </div>
           <div className="drive_section_bottom hidden lg:block xl:hidden"></div>
