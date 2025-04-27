@@ -152,7 +152,7 @@ export default function Drive() {
               Driver qualifications minimum requirements
             </h2>
             <p className="text-sm md:text-base lg:text-lg tracking-[0.08em] lg:text-right">
-              ⁃ Valid Commercial Driver’s License Class A
+              ⁃ Valid Commercial Driver’s License Class A
               <br />
               ⁃ Clean Driving Record: Safe and reliable driving history.
               <br />

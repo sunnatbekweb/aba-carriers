@@ -76,11 +76,11 @@ export const Footer = () => {
                 <ul className={`${styles.footer_list} flex flex-col gap-y-1.5`}>
                   <li className="flex flex-col text-sm 2xl:text-base text-center md:text-left">
                     4764 Fishburg Rd, Suite D2 <br />
-                    Huber Heights, OH 45424 (Official address)
+                    Huber Heights, OH 45424 (Official address)
                   </li>
                   <li className="flex flex-col text-sm 2xl:text-base text-center md:text-left">
                     537 E S Frontage Rd Suite 202, <br />
-                    Bolingbrook, IL 60440 (Main address, Yard)
+                    Bolingbrook, IL 60440 (Main address, Yard)
                   </li>
                 </ul>
               </div>
