@@ -26,13 +26,17 @@ export default function Services() {
             </div>
             <div>
               <p className="text-white tracking-wider text-sm md:text-base lg:text-lg mb-6 md:mb-10 leading-relaxed md:text-gray-700">
-                When you choose ABA, you get the advantage of team driver
-                deliveries, ensuring faster and more efficient freight
-                transportation. Our experienced office staff works closely with
-                you to plan and schedule shipments, tailoring solutions to meet
-                your needs
+                With a focus on time-sensitive and high-priority freight,
+                our team drivers provide expedited and secure deliveries.
+                Whether you need dedicated freight services or specialised dry
+                van transportation, we are committed to efficiency, reliability,
+                and customer satisfaction.
               </p>
               <p className="text-white tracking-wider text-sm md:text-base lg:text-lg leading-relaxed md:text-gray-700">
+                Whether you are exploring new logistics partnerships or need immediate
+                freight support, we are here to make the process simple and stress-free.
+                Get in touch with us to learn how ABA can help streamline your
+                transportation needs with speed, safety, and reliability
                 For more details about our services, rates, or to request a free
                 freight quote, contact us today or use the form below!
               </p>
